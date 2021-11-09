@@ -1,0 +1,15 @@
+    --try it yourself --
+Here are three exercises to test your SQL math skills:
+1.	Write a SQL statement for calculating the area of a circle whose radius is
+5 inches. (If you don’t remember the formula, it’s an easy web search.) Do
+you need parentheses in your calculation? Why or why not?
+
+
+2.	Using the 2010 Census county data, find out which New York state county
+has the highest percentage of the population that identified as “American
+Indian/Alaska Native Alone.” What can you learn about that county from
+online research that explains the relatively large proportion of American
+Indian population compared with other New York counties?
+
+
+3.	Was the 2010 median county population higher in California or New York?
