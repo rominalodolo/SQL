@@ -1,0 +1,26 @@
+Understanding Data Types
+        try it yourself
+
+Continue exploring data types with these exercises:
+
+1.	Your company delivers fruit and vegetables to local grocery stores, and
+you need to track the mileage driven by each driver each day to a tenth
+of a mile. Assuming no driver would ever travel more than 999 miles in a
+day, what would be an appropriate data type for the mileage column in
+your table? Why?
+
+Mileage is a set value and will always be a 6 digit figure so using a real data type with floating type storage. This data type uses only 4bytes of storage and it'll be easier to determine the overall milage usage over time.  
+
+2.	In the table listing each driver in your company, what are appropriate
+data types for the drivers’ first and last names? Why is it a good idea to
+separate first and last names into two columns rather than having one
+larger name column?
+
+varchar would be an appropriate datatype to use because you can specify the length of the name and the names can vary. 
+
+
+3.	Assume you have a text column that includes strings formatted as dates.
+One of the strings is written as '4//2017'. What will happen when you try
+to convert that string to the timestamp data type?
+
+It'll give you a syntax error because there is missing information for the date. But if you add the missing value ie: '4/7/2017' the program will return 2017-04-07 00:00:00
