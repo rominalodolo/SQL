@@ -176,7 +176,7 @@ CREATE TABLE state_regions (
 );
 
 COPY state_regions
-FROM 'C:\YourDirectory\state_regions.csv'
+FROM '/Users/rominalodolo/Desktop/GitHub/SQL/PracticalSQLExercises/Chap9/state_regions.csv'
 WITH (FORMAT CSV, HEADER, DELIMITER ',');
 
 -- Listing 9-19: Adding and updating an inspection_date column
