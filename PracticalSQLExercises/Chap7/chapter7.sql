@@ -165,7 +165,7 @@ CREATE TABLE new_york_addresses (
 );
 
 COPY new_york_addresses
-FROM 'C:\YourDirectory\city_of_new_york.csv'
+FROM '/Users/rominalodolo/Desktop/GitHub/SQL/PracticalSQLExercises/Chap7/city_of_new_york.csv'
 WITH (FORMAT CSV, HEADER);
 
 -- Listing 7-12: Benchmark queries for index performance
