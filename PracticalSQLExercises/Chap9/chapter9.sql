@@ -22,7 +22,7 @@ CREATE TABLE meat_poultry_egg_inspect (
 );
 
 COPY meat_poultry_egg_inspect
-FROM 'C:\YourDirectory\MPI_Directory_by_Establishment_Name.csv'
+FROM '/Users/rominalodolo/Desktop/GitHub/SQL/PracticalSQLExercises/Chap9/MPI_Directory_by_Establishment_Name.csv'
 WITH (FORMAT CSV, HEADER, DELIMITER ',');
 
 CREATE INDEX company_idx ON meat_poultry_egg_inspect (company);
