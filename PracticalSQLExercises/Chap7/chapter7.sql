@@ -25,7 +25,7 @@ CREATE TABLE natural_key_example (
     CONSTRAINT license_key PRIMARY KEY (license_id)
 );
 
--- Listing 7-2: Example of a primary key violation
+-- Listing 7-2: Example of a primary key violation ERROR
 INSERT INTO natural_key_example (license_id, first_name, last_name)
 VALUES ('T229901', 'Lynn', 'Malero');
 
@@ -40,7 +40,7 @@ CREATE TABLE natural_key_composite_example (
     CONSTRAINT student_key PRIMARY KEY (student_id, school_day)
 );
 
--- Listing 7-4: Example of a composite primary key violation
+-- Listing 7-4: Example of a composite primary key violation ERROR
 
 INSERT INTO natural_key_composite_example (student_id, school_day, present)
 VALUES(775, '1/22/2017', 'Y');
