@@ -145,7 +145,7 @@ CREATE TABLE fbi_crime_data_2015 (
 );
 
 COPY fbi_crime_data_2015
-FROM 'C:\YourDirectory\fbi_crime_data_2015.csv'
+FROM '/Users/rominalodolo/Desktop/GitHub/SQL/PracticalSQLExercises/Chap10/fbi_crime_data_2015.csv'
 WITH (FORMAT CSV, HEADER, DELIMITER ',');
 
 SELECT * FROM fbi_crime_data_2015
