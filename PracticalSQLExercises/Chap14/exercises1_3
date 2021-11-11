@@ -1,0 +1,25 @@
+    -- try it yourself --
+Use the spatial data you’ve imported in this chapter to try additional analysis:
+
+
+1.	Earlier, you found which U.S. county has the largest area. Now, aggregate
+the county data to find the area of each state in square miles. (Use
+the statefp10 column in the us_counties_2010_shp table.) How many states
+are bigger than the Yukon-Koyukuk area?
+
+
+2.	Using ST_Distance(), determine how many miles separate these two
+farmers’ markets: the Oakleaf Greenmarket (9700 Argyle Forest Blvd,
+Jacksonville, Florida) and Columbia Farmers Market (1701 West Ash
+Street, Columbia, Missouri). You’ll need to first find the coordinates for
+both in the farmers_markets table. (Hint: You can also write this query
+using the Common Table Expression syntax you learned in Chapter 12.)
+
+
+3.	More than 500 rows in the farmers_markets table are missing a value in the
+county column, which is an example of dirty government data. Using the
+us_counties_2010_shp table and the ST_Intersects() function, perform a
+spatial join to find the missing county names based on the longitude and
+latitude of each market. Because geog_point in farmers_markets is of the
+geography type and its SRID is 4326, you’ll need to cast geom in the census
+table to the geography type and change its SRID using ST_SetSRID().
