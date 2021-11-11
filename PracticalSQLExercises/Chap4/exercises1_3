@@ -11,7 +11,7 @@ id:movie:actor
 
 COPY table_name
 FROM '/Users/rominalodolo/Desktop/GitHub/SQL/PracticalSQLExercises/Chap4/exercise1.csv'
-WITH (FORMAT CSV, HEADER, DELIMITER '|');
+WITH (FORMAT CSV, HEADER, DELIMITER ':', QUOTE '#');
 
 2.	Using the table us_counties_2010 you created and filled in this chapter,
 export to a CSV file the 20 counties in the United States that have the most
@@ -30,3 +30,4 @@ WITH (FORMAT CSV, HEADER, DELIMITER '|');
 Will a column in your target table with data type numeric(3,8) work
 for these values? Why or why not?
 
+No..
