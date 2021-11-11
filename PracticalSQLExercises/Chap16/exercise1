@@ -1,0 +1,7 @@
+    -- try it yourself --
+    
+To reinforce the techniques in this chapter, choose an example from an earlier
+chapter and try working through it using only the command line. Chapter 14 is
+a good choice because it gives you the opportunity to work with psql and the
+shapefile loader shp2pgsql. But choose any example that you think you would
+benefit from reviewing.
