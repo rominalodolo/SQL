@@ -210,7 +210,7 @@ CREATE TABLE ice_cream_survey (
 );
 
 COPY ice_cream_survey
-FROM 'C:\YourDirectory\ice_cream_survey.csv'
+FROM '/Users/rominalodolo/Desktop/GitHub/SQL/PracticalSQLExercises/Chap12/ice_cream_survey.csv'
 WITH (FORMAT CSV, HEADER);
 
 -- Listing 12-11: Generating the ice cream survey crosstab
@@ -245,7 +245,7 @@ CREATE TABLE temperature_readings (
 
 COPY temperature_readings 
      (station_name, observation_date, max_temp, min_temp)
-FROM 'C:\YourDirectory\temperature_readings.csv'
+FROM '/Users/rominalodolo/Desktop/GitHub/SQL/PracticalSQLExercises/Chap12/temperature_readings.csv'
 WITH (FORMAT CSV, HEADER);
 
 -- Listing 12-13: Generating the temperature readings crosstab
