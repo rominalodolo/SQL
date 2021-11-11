@@ -19,7 +19,7 @@ housing units. Make sure you export only each county’s name, state, and
 number of housing units. (Hint: Housing units are totaled for each county
 in the column housing_unit_count_100_percent.)
 
-COPY us_counties_2010 (geo_name, state, housing_unit_count_100_percent)
+COPY us_counties_2010 (geo_name, state_us_abbreviation, housing_unit_count_100_percent)
 TO '/Users/rominalodolo/Desktop/GitHub/SQL/PracticalSQLExercises/Chap4/us_counties_latlon_export.csv'
 WITH (FORMAT CSV, HEADER, DELIMITER '|');
 
