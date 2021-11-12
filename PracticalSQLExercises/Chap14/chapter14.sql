@@ -100,7 +100,7 @@ CREATE TABLE farmers_markets (
 );
 
 COPY farmers_markets
-FROM 'C:\YourDirectory\farmers_markets.csv'
+FROM '/Users/rominalodolo/Desktop/GitHub/SQL/PracticalSQLExercises/Chap14/farmers_markets.csv'
 WITH (FORMAT CSV, HEADER);
 
 SELECT count(*) FROM farmers_markets; -- should return 8,681 rows

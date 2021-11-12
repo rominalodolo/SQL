@@ -54,7 +54,7 @@ CREATE TABLE state_regions (
     region varchar(20) NOT NULL
 );
 
-\copy state_regions FROM 'C:\YourDirectory\state_regions.csv' WITH (FORMAT CSV, HEADER);
+\copy state_regions FROM '/Users/rominalodolo/Desktop/GitHub/SQL/PracticalSQLExercises/Chap16/state_regions.csv' WITH (FORMAT CSV, HEADER);
 
 -- Listing 16-8: Saving query output to a file
 
@@ -67,7 +67,7 @@ SELECT * FROM grades;
 -- Set psql to output results
 -- Note that Windows users must suppply forward slashes for
 -- this command, which is opposite of normal use.
-\o 'C:/YourDirectory/query_output.csv'
+\o '/Users/rominalodolo/Desktop/GitHub/SQL/PracticalSQLExercises/Chap16/query_output.csv'
 
 -- Run the query and output
 SELECT * FROM grades;

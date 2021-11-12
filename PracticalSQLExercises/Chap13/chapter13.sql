@@ -70,7 +70,7 @@ CREATE TABLE crime_reports (
 );
 
 COPY crime_reports (original_text)
-FROM 'C:\YourDirectory\crime_reports.csv'
+FROM '/Users/rominalodolo/Desktop/GitHub/SQL/PracticalSQLExercises/Chap13/crime_reports.csv'
 WITH (FORMAT CSV, HEADER OFF, QUOTE '"');
 
 SELECT original_text FROM crime_reports;
@@ -265,7 +265,7 @@ CREATE TABLE president_speeches (
 );
 
 COPY president_speeches (president, title, speech_date, speech_text)
-FROM 'C:\YourDirectory\sotu-1946-1977.csv'
+FROM '/Users/rominalodolo/Desktop/GitHub/SQL/PracticalSQLExercises/Chap13/sotu-1946-1977.csv'
 WITH (FORMAT CSV, DELIMITER '|', HEADER OFF, QUOTE '@');
 
 SELECT * FROM president_speeches;
