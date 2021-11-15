@@ -26,7 +26,7 @@ else:
 # new example magic number app
 
 number = 6
-user_input = input("Enter 'y' if you would like to play.")
+user_input = input("Enter 'y' if you would like to play.").lower()
 
 if user_input == "y":
     user_number = int(input("Guess our number: "))
@@ -34,3 +34,17 @@ if user_input == "y":
         print("You guessed correctly!")
     else:
         print("Sorry, Guess again.")
+
+
+# or we create a tuple with 'y' 'Y' 
+
+number = 6
+user_input = input("Enter 'y' if you would like to play.")
+
+if user_input in ("y", "Y"):
+    user_number = int(input("Guess our number: "))
+    if user_number == number: 
+        print("You guessed correctly!")
+    else:
+        print("Sorry, Guess again.")
+
