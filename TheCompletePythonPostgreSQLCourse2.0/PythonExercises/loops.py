@@ -40,3 +40,16 @@ friends = ["John", "Sally", "Mary", "Bianca"]
 
 for friend in friends:
     print(f'{friend} is my friend.')
+
+
+# calculating grades for a class with for loops 
+
+grades = [35, 67, 80, 94, 93, 57]
+total = 0 
+amount = len(grades)
+
+for grade in grades:
+    total += grade
+
+    print(total / amount)
+    
