@@ -52,4 +52,13 @@ for grade in grades:
     total += grade
 
     print(total / amount)
-    
+
+
+# Sum function 
+
+grades = [35, 67, 80, 94, 93, 57]
+total = sum(grades)
+amount = len(grades)
+
+print(total / amount)
+
