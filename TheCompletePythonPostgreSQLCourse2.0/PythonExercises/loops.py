@@ -36,4 +36,7 @@ while True:
 
 # For loop 
 
-friends = ["John", ""]
+friends = ["John", "Sally", "Mary", "Bianca"]
+
+for friend in friends:
+    print(f'{friend} is my friend.')
