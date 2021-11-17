@@ -22,3 +22,12 @@ print(starts_s)
 print(friends is starts_s)
 print("friends: ", id(friends), "starts_s: ", id(starts_s))
 
+# if you want the lists to be the same thing then ...
+
+friends = ["Sam", "Johan", "Romi", "Jeff"]
+starts_s = friends
+
+print(friends)
+print(starts_s)
+print(friends is starts_s)
+print("friends: ", id(friends), "starts_s: ", id(starts_s))
