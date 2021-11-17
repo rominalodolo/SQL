@@ -18,3 +18,14 @@ for student, attendance in student_attendance.items():
 # https://blog.teclado.com/destructuring-in-python/ 
 
 
+people = [("Romi", 27, "Designer")]
+name, _, profession = person 
+
+print(name, profession)
+
+# collecting
+
+head, *tail = [1, 2, 3, 4, 5]
+print(head)
+print(tail)
+
