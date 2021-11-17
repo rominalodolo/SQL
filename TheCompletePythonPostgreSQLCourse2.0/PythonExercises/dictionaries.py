@@ -18,6 +18,16 @@ friends = [
 print(friends[1]["name"])
 
 
+# if else 
+
+student_attendance = {"Romi": 26, "Amy": 30, "Jen": 29}
+
+if "Romi" in student_attendance:
+    print(f"Romi: {student_attendance['Romi']}")
+else:
+    print("Romi is not a student in this class")
+
+
 # for loops 
 
 student_attendance = {"Romi": 26, "Amy": 30, "Jen": 29}
