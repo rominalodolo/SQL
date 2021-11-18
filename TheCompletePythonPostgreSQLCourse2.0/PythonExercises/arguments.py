@@ -22,6 +22,28 @@ say_hello("Bob")
 
 # this will result in an ERROR
 
-# Name parameter 
+# Name parameter - positional 
 
-def 
+def say_hello(name, surname):
+    print(f"Hello, {name} {surname}")
+
+say_hello("Bob", "Smith")
+
+
+
+# Named/ Keyword arguments 
+def say_hello(name, surname):
+    print(f"Hello, {name} {surname}")
+
+say_hello(surname="Bob", name="Smith")
+
+
+# Using key word arguments 
+
+def divide(dividend, divisor):
+    if divisor != 0:
+        print(dividend / divisor)
+    else:
+        print("You fool!")
+
+divide(dividend=15, divisor=0)
