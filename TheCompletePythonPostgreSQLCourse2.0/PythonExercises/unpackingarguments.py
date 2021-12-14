@@ -7,3 +7,4 @@ def multiply(*args):
     return total
     
 # multiply(1, 3, 5)
+# print(multiply(-1))
