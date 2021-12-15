@@ -17,4 +17,8 @@ def multiply(*args):
     #     total = total * arg
     
     # return total
-# def apply(*args, operator):
+def apply(*args, operator):
+    if operator == "*":
+        return multiply(args)
+    elif operator == "+":
+        return
