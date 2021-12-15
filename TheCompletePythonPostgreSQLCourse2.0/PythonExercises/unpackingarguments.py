@@ -21,4 +21,8 @@ def apply(*args, operator):
     if operator == "*":
         return multiply(args)
     elif operator == "+":
-        return
+        return sum(args)
+    else: 
+        return "No valid operator provided to apply()."
+
+print(apply(1, 3, 6, 7, operator="*"))
