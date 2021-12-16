@@ -26,3 +26,4 @@ def apply(*args, operator):
         return "No valid operator provided to apply()."
 
 print(apply(1, 3, 6, 7, operator="*"))
+
