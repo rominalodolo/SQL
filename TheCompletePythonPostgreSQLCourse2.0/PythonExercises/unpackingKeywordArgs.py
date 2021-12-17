@@ -22,3 +22,10 @@ named(**details)
     # print(f"{arg}: {value}")
      
 # print_nicely(name="Romi", age=27)
+
+
+# def both(*args, **kwargs):
+    # print(args)
+    # print(kwargs)
+
+# both(1, 3, 5, name="Romi", age=27) 
