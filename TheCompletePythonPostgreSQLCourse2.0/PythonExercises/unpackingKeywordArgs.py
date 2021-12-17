@@ -17,7 +17,7 @@ named(**details)
     # print(kwargs)
        
  # def print_nicely(**kwargs):
-    # names(**kwargs)
+    # names(**kwargs) 
     # for arg, value in kwargs.items(): 
     # print(f"{arg}: {value}")
      
@@ -34,3 +34,9 @@ named(**details)
 def post(url, data=None, json=None, **kwargs):
     return requests('post', url, data=data, json=json, **kwargs)
 """
+
+# def myfunction(*kwargs):
+    # print(kwargs)
+
+myfunction(**"Romi") """Error, must be mapping"""
+myfunction(**None) """Error """
