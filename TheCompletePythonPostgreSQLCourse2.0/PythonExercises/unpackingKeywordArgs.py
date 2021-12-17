@@ -29,3 +29,8 @@ named(**details)
     # print(kwargs)
 
 # both(1, 3, 5, name="Romi", age=27) 
+
+"""
+def post(url, data=None, json=None, **kwargs):
+    return requests('post', url, data=data, json=json, **kwargs)
+"""
