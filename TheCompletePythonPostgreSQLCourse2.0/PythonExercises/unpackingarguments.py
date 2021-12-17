@@ -10,6 +10,18 @@ def multiply(*args):
 # print(multiply(-1))
 
 
+def apply(*args, operator):
+    if operator == "*":
+        return multiply(*args)
+    elif operator == "+":
+        return sum(args)
+    else: 
+        return "No valid operator provided to apply()."
+
+print(apply(1, 3, 6, 7, operator="*"))
+
+
+
 def add(x, y):
     return x + y 
 
@@ -26,13 +38,3 @@ print(add(*nums))
     #     total = total * arg
     
     # return total
-def apply(*ar gs, operator):
-    if operator == "*":
-        return multiply(args)
-    elif operator == "+":
-        return sum(args)
-    else: 
-        return "No valid operator provided to apply()."
-
-print(apply(1, 3, 6, 7, operator="*"))
-
