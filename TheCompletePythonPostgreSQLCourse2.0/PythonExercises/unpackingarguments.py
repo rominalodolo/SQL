@@ -10,6 +10,15 @@ def multiply(*args):
 # print(multiply(-1))
 
 
+def add(x, y):
+    return x + y 
+
+nums = [3, 5]
+print(add(*nums))
+
+
+
+
 #def multiply(*args):
     # print(args)
     # total = 1
@@ -17,7 +26,7 @@ def multiply(*args):
     #     total = total * arg
     
     # return total
-def apply(*args, operator):
+def apply(*ar gs, operator):
     if operator == "*":
         return multiply(args)
     elif operator == "+":
