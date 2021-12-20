@@ -11,6 +11,13 @@
 # print(student.average())
 
 
+# init is a method because it is in a class
+
 class Student:
     def __init__(self):
-        self.name = "Romi"
+        self.name = "Romina"
+        self.grades = (89, 90, 93, 78, 81)
+
+student = Student()
+print(student.name)
+print(student.grades)
