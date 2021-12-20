@@ -13,13 +13,27 @@
 
 # init is a method because it is in a class
 
-class Student:
+""" class Student:
     def __init__(self):
         self.name = "Romina"
         self.grades = (89, 90, 93, 78, 81)
-        
+
     # the average method 
     def average(self): 
+        return sum(self.grades) / len(self.grades)
+
+student = Student()
+print(student.name)
+print(student.grades) """
+
+
+
+class Student:
+    def __init__(self, name, grades):
+        self.name = name
+        self.grades = grades
+         
+    def average_grade(self): 
         return sum(self.grades) / len(self.grades)
 
 student = Student()
