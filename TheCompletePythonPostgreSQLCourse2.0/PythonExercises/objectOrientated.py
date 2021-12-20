@@ -17,6 +17,9 @@ class Student:
     def __init__(self):
         self.name = "Romina"
         self.grades = (89, 90, 93, 78, 81)
+    
+    def average(self): 
+        return sum(self.grades) / len(self.grades)
 
 student = Student()
 print(student.name)
