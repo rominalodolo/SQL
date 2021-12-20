@@ -36,6 +36,6 @@ class Student:
     def average_grade(self): 
         return sum(self.grades) / len(self.grades)
 
-student = Student()
+student = Student("Bianca", (89, 90, 93, 78, 81))
 print(student.name)
 print(student.grades)
