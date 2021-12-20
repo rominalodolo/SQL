@@ -39,5 +39,5 @@ class Student:
 student = Student("Bianca", (89, 90, 93, 78, 81))
 student2 = Student("Bradley", (100, 99, 100, 79, 85))
 
-print(student.name)
-print(student.average_grades())
+print(student.average_grade())
+print(student2.average_grade())
