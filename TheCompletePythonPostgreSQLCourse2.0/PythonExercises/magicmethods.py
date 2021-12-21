@@ -6,6 +6,7 @@ class Preson:
         self.age = age
 
     def __str__(self):
+        return f"Person {self.name}, "
 
 bob = Person("Bob", 35)
 print(bob)
