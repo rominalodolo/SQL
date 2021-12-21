@@ -5,5 +5,7 @@ class Preson:
         self.name = name
         self.age = age
 
-    def __str__(self) -> str:
+    def __str__(self):
 
+bob = Person("Bob", 35)
+print(bob)
