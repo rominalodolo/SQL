@@ -8,5 +8,9 @@ class Preson:
     def __str__(self):
         return f"Person {self.name}, {self.age} years old."
 
+    def __str__(self):
+        return f"Person {self.name}, {self.age} years old."
+
+
 bob = Person("Bob", 35)
 print(bob)
