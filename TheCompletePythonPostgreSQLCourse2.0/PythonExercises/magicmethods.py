@@ -9,7 +9,7 @@ class Preson:
     #     return f"Person {self.name}, {self.age} years old."
 
     def __repr__(self):
-        return f"<Person ({self.name}, {self.age} years old.)>"
+        return f"<Person ('{self.name}', {self.age} years old.)>"
 
 
 bob = Person("Bob", 35)
