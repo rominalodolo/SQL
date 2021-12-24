@@ -1,1 +1,1 @@
-# @class methods 
+# @classmethod and @staticmethod
