@@ -7,3 +7,10 @@ class ClassTest:
 test = ClassTest()
 test.instance_method()
 ClassTest.instance_method(test)
+
+
+    @classmethod
+    def static_method():
+        print("Called static_method.")
+
+classTest.class_method()
