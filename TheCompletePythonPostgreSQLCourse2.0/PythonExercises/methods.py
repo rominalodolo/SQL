@@ -22,4 +22,7 @@ classTest.class_method()
 
 
 class Book:
-    TYPES = ()
+    TYPES = ("hardcover", "paperback")
+
+    def __init__(self, name, book_type, wright):
+        self.name = 
