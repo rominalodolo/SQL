@@ -13,4 +13,9 @@ ClassTest.instance_method(test)
     def static_method():
         print("Called static_method.")
 
+    @static_method
+    def static_method():
+        
+
 classTest.class_method()
+
