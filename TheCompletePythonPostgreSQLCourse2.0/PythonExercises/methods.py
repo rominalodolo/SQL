@@ -15,7 +15,11 @@ ClassTest.instance_method(test)
 
     @static_method
     def static_method():
-        
+        print("Called static_method.")
+
 
 classTest.class_method()
 
+
+class Book:
+    TYPES = ()
