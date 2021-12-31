@@ -15,7 +15,9 @@ class Device:
 
     class Printer(Device):
         def __init__(self) -> None:
-            super().__init__(name, connected)
+            super().__init__(name, connected_by)
             self.capacity = capacity
-            self.r
-
+            self.remaining_pages = capacity
+        
+        def __str__(self) -> str:
+            return f"{super().__str__()} ({self.remaining_pages})
