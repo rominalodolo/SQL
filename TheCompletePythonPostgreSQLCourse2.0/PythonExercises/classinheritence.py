@@ -19,5 +19,7 @@ class Device:
             self.capacity = capacity
             self.remaining_pages = capacity
         
-        def __str__(self) -> str:
-            return f"{super().__str__()} ({self.remaining_pages})
+        def __str__(self):
+            return f"{super().__str__()} ({self.remaining_pages} pages remaining)"
+
+        def print(self, pages)
