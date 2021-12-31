@@ -12,3 +12,10 @@ class Device:
     def disconnect(self):
         self.connected = Flase 
         print("Disconnected.")
+
+    class Printer(Device):
+        def __init__(self) -> None:
+            super().__init__(name, connected)
+            self.capacity = capacity
+            self.r
+
