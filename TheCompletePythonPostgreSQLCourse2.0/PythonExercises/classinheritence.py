@@ -24,4 +24,6 @@ class Device:
 
         def print(self, pages):
             if not self.connected:
-                print("Your printer is not")
+                print("Your printer is not connected!")
+                return 
+            print(f"Printing {pages} pages.")
