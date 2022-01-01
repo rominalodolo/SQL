@@ -27,3 +27,8 @@ class Device:
                 print("Your printer is not connected!")
                 return 
             print(f"Printing {pages} pages.")
+    
+printer = Printer("Printer", "USB", 500)
+printer.print(20)
+
+print(printer)
