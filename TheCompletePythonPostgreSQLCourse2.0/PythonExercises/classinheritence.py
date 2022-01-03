@@ -27,6 +27,7 @@ class Device:
                 print("Your printer is not connected!")
                 return 
             print(f"Printing {pages} pages.")
+            self.remaining_pages -= pages 
     
 printer = Printer("Printer", "USB", 500)
 printer.print(20)
