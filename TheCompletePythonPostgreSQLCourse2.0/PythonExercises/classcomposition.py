@@ -5,4 +5,8 @@ class BookShelf:
         self.quantity = quantity
     
     def __str__(self) -> str:
-        return
+        return f"BookShelf with {self.quantity} books."
+
+shelf = BookShelf(300)
+
+print(shelf)
