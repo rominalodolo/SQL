@@ -7,4 +7,5 @@ def add_entry():
     entries.append({"content": entry_content, "date": entry_date})
 
 def view_entries():
-    pass
+    for entry in entries:
+        print(f"{entry['date']}\n{entry['content']}\n\n")
