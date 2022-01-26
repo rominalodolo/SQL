@@ -1,6 +1,8 @@
 # The Complete Python Postgre SQL Course 2.0
 Created by Codestars by Rob Percival, Jose Salvatierra, Teclado by Jose Salvatierra
 
+Check it out here: [Udemy Course](https://www.udemy.com/course/complete-python-postgresql-database-course/)
+
 ## Build a Programming Journal with Python & SQL
 
 SQLite Activities: 
