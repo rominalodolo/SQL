@@ -8,6 +8,11 @@ welcome = "Welcome to the programming diary!"
 
 user_input = input (menu)
 while (user_input := input(menu)) != "3":
-    # We'll deal with user input here...
+    if user_input == "1":
+        print("Adding...")
+    elif user_input == "2":
+        print("Viewing...")
+    else:
+        print("Invalid option, please try again.") 
 
-    user_inout = input(menu)
+
