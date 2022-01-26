@@ -6,6 +6,8 @@ Your selection: """
 
 welcome = "Welcome to the programming diary!"
 
+print(welcome)
+
 user_input = input (menu)
 while (user_input := input(menu)) != "3":
     if user_input == "1":
