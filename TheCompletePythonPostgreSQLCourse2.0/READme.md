@@ -12,4 +12,6 @@ SQLite Activities:
 ![exercise2_reviewers](https://user-images.githubusercontent.com/83961643/151131778-2a84c4ac-c585-45ef-9827-e7c045020b9d.jpeg)
 ![exercise3_temp](https://user-images.githubusercontent.com/83961643/151131788-c27bdb03-8733-430e-8278-812d5c82b3d5.jpeg)
 
-
+INSERT INTO 
+![1](https://user-images.githubusercontent.com/83961643/151775135-8adeaeaf-93b0-46b3-99a7-b34632831ca7.jpeg)
+![2](https://user-images.githubusercontent.com/83961643/151775155-8994d74b-e43e-4de6-a56e-6b6e7f2fbc73.jpeg)
