@@ -1,8 +1,5 @@
 import sqlite3
 
-
-import sqlite3
-
 from matplotlib.pyplot import connect
 
 
