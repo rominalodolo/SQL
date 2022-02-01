@@ -11,7 +11,10 @@ def create_table():
         connection.execute("CREATE TABLE entries (content TEXT, date TEXT);")
 
 def add_entry(entry_content, entry_date):
-    connection.execute("INSERT INTO entries VALUES ('This is some test content.', '01-02-2022');")
+    with connection:
+        connection.execute(
+            "INSERT INTO entries VALUES ('This is some test content.', '01-02-2022');"
+            )
 
 def view_entries():
   return entries 
