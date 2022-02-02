@@ -20,7 +20,7 @@ def view_entries(entries):
 
 
 print(welcome)
-create_tables()
+create_table()
 
 user_input = input (menu)
 while (user_input := input(menu)) != "3":
