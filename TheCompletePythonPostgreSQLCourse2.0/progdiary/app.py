@@ -22,7 +22,7 @@ def view_entries(entries):
 print(welcome)
 create_table()
 
-user_input = input (menu)
+  
 while (user_input := input(menu)) != "3":
     if user_input == "1":
         prompt_new_entry()

@@ -15,4 +15,4 @@ def add_entry(entry_content, entry_date):
             )
 
 def view_entries():
-  return entries 
+  return entries
