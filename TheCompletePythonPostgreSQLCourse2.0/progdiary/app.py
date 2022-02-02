@@ -1,4 +1,4 @@
-from database2 import create_table, add_entry,  get_entries
+from database import create_table, add_entry,  get_entries
 
 menu = """Please select one of the following options: 
 1) Add new entry for today.
