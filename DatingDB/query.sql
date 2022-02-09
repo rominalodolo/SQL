@@ -66,6 +66,59 @@ CREATE TABLE IF NOT EXISTS public.profession
     CONSTRAINT profession_pkey PRIMARY KEY (prof_id)
 );
 
+-- inserting data
+
+INSERT INTO zip_code(zip_code, city, province)
+VALUES  ('35-174','Biloxi','Sinaloa'),
+  ('412357','Bauchi','Basilicata'),
+  ('49966','Cork','Limburg'),
+  ('477341','Itanagar','North Island'),
+  ('28463','Shimla','Massachusetts');
+
+INSERT INTO interests(interest)
+VALUES('fittness'),
+      ('volunteering'),
+	  ('adventure sports'),
+	  ('travel'),
+	  ('blogging');
+  
+
+INSERT INTO seeking(seeking)
+VALUES('steady relationship'),
+      ('hook-up'),
+	  ('friends'),
+	  ('partner');
+	  
+INSERT INTO status(status)
+VALUES('single'),
+	  ('devorced'),
+	  ('married'),
+      ('widowed');
+
+INSERT INTO my_contacts(last_name, first_name, phone, email, gender, birthday, prof_id, zip_code, status_id)
+VALUES("Armand Petty","(333) 383-5121","dui@protonmail.edu","male", 1, "35-174", 1),
+  ("Kay Montgomery","(921) 732-4364","malesuada@google.ca", "", 2, "412357", 3),
+  ("Aaron Casey","(321) 735-4555","amet.faucibus.ut@yahoo.ca","49966"),
+  ("Karen Hinton","(503) 473-5218","nibh.sit@icloud.com","477341"),
+  ("Lucy Langley","(482) 341-6349","faucibus.morbi.vehicula@yahoo.edu","28463");
+ 	  
+
+INSERT INTO contact_interest(contact_id, interest_id)
+VALUES(01, 4),
+      (02, 2),
+	  (03, 2),
+	  (04, 6),
+	  (05, 2);
+	 
+
+INSERT INTO contact_seeking(contact_id, seeking_id)
+VALUES(001, 1),
+      (002, 3),
+	  (003, 1),
+	  (004, 2),
+      (005, 1);
+	
+
 ALTER TABLE IF EXISTS public.contact_interest
     ADD CONSTRAINT contact_id FOREIGN KEY (contact_id)
     REFERENCES public.my_contacts (contact_id) MATCH SIMPLE
