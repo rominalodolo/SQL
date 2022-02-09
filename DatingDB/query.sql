@@ -105,10 +105,10 @@ VALUES("Armand Petty","(333) 383-5121","dui@protonmail.edu","male", 1, "35-174",
 
 INSERT INTO contact_interest(contact_id, interest_id)
 VALUES(01, 4),
-      (02, 2),
+      (02, 1),
 	  (03, 2),
-	  (04, 6),
-	  (05, 2);
+	  (04, 5),
+	  (05, 3);
 	 
 
 INSERT INTO contact_seeking(contact_id, seeking_id)
