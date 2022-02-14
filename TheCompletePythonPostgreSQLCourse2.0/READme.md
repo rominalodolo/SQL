@@ -21,3 +21,7 @@ Exercise 1:
 Exercise 2:
 ![1](https://user-images.githubusercontent.com/83961643/151790336-be531890-f9eb-4830-8d3e-42a1195f4f06.jpeg)
 ![2](https://user-images.githubusercontent.com/83961643/151790322-ca27e9fb-7d09-437e-a2b0-38ba6f55f144.jpeg)
+
+
+SELECT function
+![select15](https://user-images.githubusercontent.com/83961643/153846585-af33c82b-7eec-43b6-bfee-8525c84875df.jpeg)
