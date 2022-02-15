@@ -50,5 +50,9 @@ The WHERE clause goes after SELECT * ... ie table name:
     - Use `AND` and `OR` to chain comparisons logically
         - WHERE years_experience `>` 10 AND salary `<`3500;
         - WHERE age `<=` 18 OR age `>=` 65;
-        
-         
+
+- Grouping comparisons with brackets
+    - Comparisons inside brackets are evaluated first:
+        - WHERE age `<=` 18 OR age `>=` 65 AND salary `>` 0;
+        - WHERE (age `<=` 18 OR age `>=` 65) AND salary `>` 0;
+        - WHERE age `<=` 18 OR (age `>=` 65 AND salary `>` 0);
