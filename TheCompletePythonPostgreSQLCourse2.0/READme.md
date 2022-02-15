@@ -38,7 +38,7 @@ The WHERE clause goes after SELECT * ... ie table name:
     - WHERE salary < 35000;
     - WHERE surname != 'Smith';
 
-Comparison operators
+- Comparison operators
     - < : lower than
     - > : greater than
     - <= : lower than or equal to 
