@@ -30,11 +30,16 @@ SELECT function
 ![select15](https://user-images.githubusercontent.com/83961643/153846585-af33c82b-7eec-43b6-bfee-8525c84875df.jpeg)
 
 
-The WHERE clause 
+The WHERE clause goes after SELECT * ... ie table name:
 
 - SELECT * FROM users
     - WHERE first_name = 'John';
     - WHERE age > 18;
     - WHERE salary < 35000;
     - WHERE surname != 'Smith';
-    
+
+Comparison operators
+    - < : lower than
+    - > : greater than
+    - <= : lower than or equal to 
+    - >= : greater than or equal to 
