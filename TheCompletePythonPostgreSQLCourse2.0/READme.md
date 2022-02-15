@@ -46,3 +46,9 @@ The WHERE clause goes after SELECT * ... ie table name:
     - `=` : ecactly equal to 
     - `!=` : not equal to 
 
+- Multiple comparisons 
+    - Use `AND` and `OR` to chain comparisons logically
+        - WHERE years_experience `>` 10 AND salary `<`3500;
+        - WHERE age `<=` 18 OR age `>=` 65;
+        
+         
