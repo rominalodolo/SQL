@@ -28,3 +28,13 @@ Exercise 2:
 SELECT function
 
 ![select15](https://user-images.githubusercontent.com/83961643/153846585-af33c82b-7eec-43b6-bfee-8525c84875df.jpeg)
+
+
+The WHERE clause 
+
+- SELECT * FROM users
+    - WHERE first_name = 'John';
+    - WHERE age > 18;
+    - WHERE salary < 35000;
+    - WHERE surname != 'Smith';
+    
