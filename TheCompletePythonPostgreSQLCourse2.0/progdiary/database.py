@@ -1,3 +1,4 @@
+from html import entities
 import sqlite3
 
 connection = sqlite3.connect("data.db")
@@ -15,5 +16,5 @@ def add_entry(entry_content, entry_date):
             "INSERT INTO entries VALUES ('(?, ?);", (entry_content, entry_date)
             )
 
-def view_entries():
-  return entries
+def get_entries():
+    cursor = connection.execute("SELECT * FROM entries")
