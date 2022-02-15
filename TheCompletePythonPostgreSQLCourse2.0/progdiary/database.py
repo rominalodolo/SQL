@@ -20,4 +20,4 @@ def get_entries():
     cursor = connection.execute("SELECT * FROM entries")
 
     cursor = connection.cursor()
-    cursor.execute("")
+    cursor.execute("SELECT * FROM entries")
