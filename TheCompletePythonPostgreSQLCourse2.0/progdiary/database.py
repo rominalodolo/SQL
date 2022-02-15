@@ -19,6 +19,7 @@ def add_entry(entry_content, entry_date):
 def get_entries():
     cursor = connection.execute("SELECT * FROM entries;")
     cursor.fetchone()
+    cursor.fetchone()
 # or 
     # cursor = connection.cursor()
     # cursor.execute("SELECT * FROM entries;")
