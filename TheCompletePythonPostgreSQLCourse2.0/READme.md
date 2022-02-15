@@ -43,3 +43,6 @@ The WHERE clause goes after SELECT * ... ie table name:
     - `>` : greater than
     - `<=`: lower than or equal to 
     - `>=` : greater than or equal to 
+    - `=` : ecactly equal to 
+    - `!=` : not equal to 
+
