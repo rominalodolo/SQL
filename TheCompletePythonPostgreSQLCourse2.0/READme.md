@@ -58,4 +58,4 @@ The WHERE clause goes after SELECT * ... ie table name:
         - WHERE (age `<=` 18 OR age `>=` 65) AND salary `>` 0;
             - in this eg. the program will first evaluate the age in brackets then move on to the next call about salary. 
         - WHERE age `<=` 18 OR (age `>=` 65 AND salary `>` 0);
-            - the last eg. shows how the brackets change the meaning of AND making it mean the conditions will be either less than or equal to 18 or that the age must be greater &/ equal to 65 
+            - the last eg. shows how the brackets change the meaning of AND making it mean the conditions will be either less than or equal to 18 or that the age must be greater &/ equal to 65 with a salary larger than 0. 
