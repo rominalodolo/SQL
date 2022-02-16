@@ -3,6 +3,8 @@ Created by Codestars by Rob Percival, Jose Salvatierra, Teclado by Jose Salvatie
 
 Check it out here: [Udemy Course](https://www.udemy.com/course/complete-python-postgresql-database-course/)
 
+(https://pysql.tecladocode.com)
+
 
 ## Build a Programming Journal with Python & SQL
 
