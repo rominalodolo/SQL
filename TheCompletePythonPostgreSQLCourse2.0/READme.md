@@ -54,7 +54,7 @@ The WHERE clause goes after SELECT * ... ie table name:
 - Grouping comparisons with brackets
     - Comparisons inside brackets are evaluated first:
         - WHERE age `<=` 18 OR age `>=` 65 AND salary `>` 0;
-            - you have to be less than or equal to 18 or you have to be 65 or more and the salary must be greater than 0.
+            - this is how you want to read it : you have to be less than or equal to 18 or you have to be 65 or more and the salary must be greater than 0 : however, the intent isn't that clear. That's why you use brackets. 
         - WHERE (age `<=` 18 OR age `>=` 65) AND salary `>` 0;
-            - 
+            - in this eg. the program will first evaluate the age in brackets then move on to the next call about salary. 
         - WHERE age `<=` 18 OR (age `>=` 65 AND salary `>` 0);
