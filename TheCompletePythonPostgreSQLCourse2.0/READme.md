@@ -67,3 +67,5 @@ The WHERE clause goes after SELECT * ... ie table name:
 - Deleting entire tables with the DROP TABLE command 
     - DROP TABLE entries;
     - DROP TABLE IF EXISTS entries;
+
+    - in SQLite there are multiple ways to delete a table 
