@@ -68,5 +68,7 @@ The WHERE clause goes after SELECT * ... ie table name:
     - DROP TABLE entries;
     - DROP TABLE IF EXISTS entries;
 
-    - in SQLite there are multiple ways to delete a table ![1](https://user-images.githubusercontent.com/83961643/154542042-c7b89ac5-eb89-4bb3-b079-9320f7e2064d.png)![2](https://user-images.githubusercontent.com/83961643/154542044-34ce1bcb-1775-4145-bb71-788fcffd3e4f.png)
+    - in SQLite there are multiple ways to delete a table 
+    ![1](https://user-images.githubusercontent.com/83961643/154542042-c7b89ac5-eb89-4bb3-b079-9320f7e2064d.png)
+    ![2](https://user-images.githubusercontent.com/83961643/154542044-34ce1bcb-1775-4145-bb71-788fcffd3e4f.png)
 
