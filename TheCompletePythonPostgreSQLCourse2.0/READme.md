@@ -64,6 +64,6 @@ The WHERE clause goes after SELECT * ... ie table name:
             - the last eg. shows how the brackets change the meaning of AND making it mean the conditions will be either less than or equal to 18 or that the age must be greater &/ equal to 65 with a salary larger than 0. 
 
 
-deleting entire tables with the DROP TABLE command 
+- Deleting entire tables with the DROP TABLE command 
  - DROP TABLE entries;
  - DROP TABLE IF EXISTS entries;
