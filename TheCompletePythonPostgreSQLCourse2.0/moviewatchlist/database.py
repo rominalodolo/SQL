@@ -1,9 +1,6 @@
-import
-
-
-from multiprocessing import connection
+import datetime
 import sqlite3
-from tkinter import INSERT
+
 
 
 CREATE_MOVIES_TABLE = """ CREATE TABLE IS NOT EXISTS movies (

@@ -14,13 +14,19 @@ welcome = "Welcome to the watchlist app!"
 print(welcome)
 database.create_tables()
 
+def prompt_watch_movie():
+    movie_title = input("Enter movie title you've watched: ")
+    database.watch_movie(movie_title)
+
+
 while (user_input := input(menu)) != "6":
     if user_input == "1":
-        pass
+        prompt_add_movie()
     elif user_input == "2":
-        pass
+        movies = database.get_movies(True)
+        print_movie_list("Upcoming", movies)
     elif user_input == "3":
-        pass
+        
     elif user_input == "4":
         pass
     elif user_input == "5":
