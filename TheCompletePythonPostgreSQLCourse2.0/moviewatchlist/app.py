@@ -64,15 +64,13 @@ while (user_input := input(menu)) != "8":
     elif user_input == "3":
         movies = database.get_movies()
 		print_movie_list("All", movies)
-    elif user_input == "4":
-        prompt_watch_movie()
-    elif user_input == "5":
-        prompt_show_watched_movies()
+	elif user_input == "4":
+		prompt_watch_movie()
+	elif user_input == "5":
+		prompt_show_watched_movies()
 	elif user_input == "6":
 		prompt_add_user()
 	elif user_input == "7":
 		prompt_search_movies()
-    else:
-        print("Invalid input, please try again!")
-
-
+	else:
+		print("Invalid input, please try again!")
