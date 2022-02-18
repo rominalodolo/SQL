@@ -75,7 +75,7 @@ The WHERE clause goes after SELECT * ... ie table name:
     ![2](https://user-images.githubusercontent.com/83961643/154542044-34ce1bcb-1775-4145-bb71-788fcffd3e4f.png)
 
 - Injection Attacks 
-    - When 
+    - "SQL injection is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database." [READ MORE](https://portswigger.net/web-security/sql-injection)
 
 # Running the Program Diary app 
 
