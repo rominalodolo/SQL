@@ -19,4 +19,8 @@ while (user_input := input(menu)) != "6":
         pass
     elif user_input == "2":
         pass
-    elif user_input
+    elif user_input == "3":
+        pass
+    elif user_input = "4":
+        pass
+    
