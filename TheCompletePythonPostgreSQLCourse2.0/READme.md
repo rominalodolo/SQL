@@ -76,6 +76,9 @@ The WHERE clause goes after SELECT * ... ie table name:
 
 - Injection Attacks 
     - "SQL injection is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database." [READ MORE](https://portswigger.net/web-security/sql-injection)
+    - use `?` instead of string formatting when working with databases to avoid python code running unwanted commands. 
+        - GET_USER = "SELECT * FROM users WHERE first_name = ?;"
+        - curser.execute(GET_USER, (username, ))
 
 # Running the Program Diary app 
 
