@@ -87,4 +87,6 @@ The WHERE clause goes after SELECT * ... ie table name:
 
 ## Movie Watch List App
 
+
+
 LAST EDIT February 2022
