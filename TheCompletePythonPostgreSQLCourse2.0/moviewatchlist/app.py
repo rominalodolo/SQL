@@ -21,6 +21,9 @@ while (user_input := input(menu)) != "6":
         pass
     elif user_input == "3":
         pass
-    elif user_input = "4":
+    elif user_input == "4":
         pass
-    
+    elif user_input == "5":
+        pass
+    else:
+        print("Invalid input, please try again!")
