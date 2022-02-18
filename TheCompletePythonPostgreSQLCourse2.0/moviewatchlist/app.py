@@ -10,3 +10,6 @@ menu = """Please select one of the following options:
 
 Your selection: """
 welcome = "Welcome to the watchlist app!"
+
+print(welcome)
+database.create_tables()
