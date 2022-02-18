@@ -5,7 +5,7 @@ menu = """Please select one of the following options:
 2) View upcoming movies.
 3) View all movies.
 4) Watch a movie.
-5) View
+5) View watched movies.
 6) Exit.
 
 Your selection: """
