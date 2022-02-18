@@ -15,4 +15,8 @@ print(welcome)
 database.create_tables()
 
 while (user_input := input(menu)) != "6":
-    if 
+    if user_input == "1":
+        pass
+    elif user_input == "2":
+        pass
+    elif user_input
