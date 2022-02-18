@@ -13,3 +13,6 @@ welcome = "Welcome to the watchlist app!"
 
 print(welcome)
 database.create_tables()
+
+while (user_input := input(menu)) != "6":
+    if 
