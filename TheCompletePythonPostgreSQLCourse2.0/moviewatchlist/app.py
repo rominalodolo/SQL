@@ -42,7 +42,7 @@ def prompt_search_movies():
 	search_term = input("Enter the partial movie title: ")
 	movies = database.search_movies(search_term)
 	if movies:
-		print_movie_list("Movies found: ", movies)
+		print_movie_list("Movies found", movies)
 	else:
 		print("Found no movies for that search term!")
 
