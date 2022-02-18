@@ -74,3 +74,4 @@ The WHERE clause goes after SELECT * ... ie table name:
 
     ![2](https://user-images.githubusercontent.com/83961643/154542044-34ce1bcb-1775-4145-bb71-788fcffd3e4f.png)
 
+# Running the Program Diary app 
