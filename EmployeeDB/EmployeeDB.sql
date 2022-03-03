@@ -78,4 +78,13 @@ ALTER TABLE IF EXISTS public."Employees"
     ON DELETE NO ACTION
     NOT VALID;
 
+SELECT emp.first_name, emp.surname, emp.gender, emp.address, emp.email,
+dept.depart_name, dept.depart_city, 
+rol.role,
+sal.salary_pa,
+ot.overtime_hours
+FROM Employees AS emp LEFT JOIN Department AS dept
+ON emp.depart_id = dept.depart_id
+ 
+
 END;

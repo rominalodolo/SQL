@@ -174,4 +174,6 @@ ALTER TABLE IF EXISTS public.my_contacts
     ON DELETE NO ACTION
     NOT VALID;
 
+
+
 END;
