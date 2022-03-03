@@ -47,6 +47,19 @@ CREATE TABLE IF NOT EXISTS public.salaries
     CONSTRAINT salaries_pkey PRIMARY KEY (salaries_id)
 );
 
+INSERT INTO `Employees` (`first_name`,`surname`, `gender`, `address`,`email`)
+VALUES
+  ("Tasha","Kline", "Female","1451 A St.","sit.amet.consectetuer@yahoo.ca"),
+  ("Jamal","Watts", "Female", "556-9451 In St.","in.molestie.tortor@protonmail.com"),
+  ("Shana","Ramos", "Female", "177-9008 Curabitur St.","sed.pede@google.org"),
+  ("Rooney","Hicks", "Male", "6615 Massa. St.","luctus.vulputate.nisi@aol.couk"),
+  ("Perry","Pace", "Male", "P.O. Box 171, 7471 Phasellus Av.","pede.nonummy.ut@yahoo.net"),
+  ("Cecilia","Hubbard", "Female", "206-9948 Pellentesque Avenue","donec@aol.edu"),
+  ("Jerome","Flynn", "Male", "Ap #557-1255 Tincidunt Ave","cursus.integer@yahoo.ca"),
+  ("Minerva","Spencer", "Male", "Ap #996-3155 Eu St.","montes.nascetur@protonmail.net"),
+  ("Channing","Robinson", "Male", "P.O. Box 229, 3397 Quam Ave","diam@icloud.net"),
+  ("Wing","Calhoun", "Female", "Ap #640-3599 Lorem St.","ipsum@yahoo.net");
+
 ALTER TABLE IF EXISTS public."Employees"
     ADD CONSTRAINT overtime_id FOREIGN KEY (overtime_id)
     REFERENCES public."Overtime Hours" (overtime_id) MATCH SIMPLE
@@ -78,13 +91,21 @@ ALTER TABLE IF EXISTS public."Employees"
     ON DELETE NO ACTION
     NOT VALID;
 
+
+
+
 SELECT emp.first_name, emp.surname, emp.gender, emp.address, emp.email,
 dept.depart_name, dept.depart_city, 
-rol.role,
+role.role,
 sal.salary_pa,
 ot.overtime_hours
 FROM Employees AS emp LEFT JOIN Department AS dept
 ON emp.depart_id = dept.depart_id
- 
+LEFT JOIN Role
+ON emp.role_id = role.role_id
+LEFT JOIN Salary AS sal
+ON emp.salary_id = sal.salary_id
+LEFT JOIN Overtime AS ot
+ON emp.overtime_id = ot.overtime_id
 
 END;

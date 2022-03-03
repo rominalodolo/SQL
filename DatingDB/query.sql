@@ -176,4 +176,5 @@ ALTER TABLE IF EXISTS public.my_contacts
 
 
 
+
 END;
