@@ -174,7 +174,18 @@ ALTER TABLE IF EXISTS public.my_contacts
     ON DELETE NO ACTION
     NOT VALID;
 
-
+SELECT cont.last_name, cont.first_name, cont.phone, cont.email, cont.gender, cont.birthday,
+prof.profession,
+zip.city, zip.province/state,
+status.status,
+FROM my_contacts AS cont LEFT JOIN Department AS dept
+ON emp.depart_id = dept.depart_id
+LEFT JOIN Role
+ON emp.role_id = role.role_id
+LEFT JOIN Salary AS sal
+ON emp.salary_id = sal.salary_id
+LEFT JOIN Overtime AS ot
+ON emp.overtime_id = ot.overtime_id
 
 
 END;
