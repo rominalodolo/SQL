@@ -1,0 +1,11 @@
+"emp_id","first_name","surname","gender","address","email","depart_id","role_id","salary_id","overtime_id"
+1,"Tasha","Kline","Female","1451 A St.","sit.amet.consectetuer@yahoo.ca","1","1","$1.00",1
+2,"Jamal","Watts","Female","556-9451 In St.","in.molestie.tortor@protonmail.com","2","2","$2.00",2
+3,"Shana","Ramos","Female","177-9008 Curabitur St.","sed.pede@google.org","3","3","$3.00",3
+4,"Rooney","Hicks","Male","6615 Massa. St.","luctus.vulputate.nisi@aol.couk","4","4","$4.00",4
+5,"Perry","Pace","Male","P.O. Box 171, 7471 Phasellus Av","pede.nonummy.ut@yahoo.net","5","5","$5.00",5
+6,"Cecilia","Hubbard","Female","206-9948 Pellentesque Avenue","donec@aol.edu","6","6","$6.00",6
+7,"Jerome","Flynn","Male","Ap #557-1255 Tincidunt Ave","cursus.integer@yahoo.ca","7","7","$7.00",7
+8,"Minerva","Spencer","Male","Ap #996-3155 Eu St.","montes.nascetur@protonmail.net","8","8","$8.00",8
+9,"Channing","Robinson","Male","P.O. Box 229, 3397 Quam Ave","diam@icloud.net","9","9","$9.00",9
+10,"Wing","Calhoun","Female","Ap #640-3599 Lorem St","ipsum@yahoo.net","10","10","$10.00",10
