@@ -3,170 +3,187 @@
 BEGIN;
 
 
-CREATE TABLE "Department"
+CREATE TABLE IF NOT EXISTS public.contact_interest
 (
-    depart_id bigserial NOT NULL,
-    depart_name character varying(50),
-    depart_city character varying(50),
-    CONSTRAINT "Department_pkey" PRIMARY KEY (depart_id)
+    contact_id integer NOT NULL,
+    interest_id integer NOT NULL
 );
 
-CREATE TABLE "Employees"
+CREATE TABLE IF NOT EXISTS public.contact_seeking
 (
-    emp_id bigserial NOT NULL,
-    first_name character varying(50),
-    surname character varying(50),
-    gender character varying(25),
-    address character varying(50),
-    email character varying(50),
-    depart_id int REFERENCES "Department"(depart_id),
-    role_id int REFERENCES "Roles"(role_id),
-    salary_id int REFERENCES "Salaries"(salaries_id),
-    overtime_id int REFERENCES "OvertimeHours"(overtime_id),
-    CONSTRAINT employee_id PRIMARY KEY (emp_id)
+    contact_id integer NOT NULL,
+    seeking_id integer NOT NULL
 );
 
-CREATE TABLE "OvertimeHours"
+CREATE TABLE IF NOT EXISTS public.interests
 (
-    overtime_id bigserial NOT NULL,
-    overtime_hours integer,
-    CONSTRAINT "OvertimeHours_pkey" PRIMARY KEY (overtime_id)
+    interest_id integer NOT NULL,
+    interest text COLLATE pg_catalog."default",
+    CONSTRAINT interests_pkey PRIMARY KEY (interest_id)
 );
 
-CREATE TABLE "Roles"
+CREATE TABLE IF NOT EXISTS public.my_contacts
 (
-    role_id bigserial NOT NULL,
-    role character varying(25) COLLATE pg_catalog."default",
-    CONSTRAINT "Roles_pkey" PRIMARY KEY (role_id)
+    contact_id int NOT NULL,
+    last_name character varying COLLATE pg_catalog."default",
+    first_name character varying COLLATE pg_catalog."default",
+    phone character(10) COLLATE pg_catalog."default",
+    email character varying COLLATE pg_catalog."default",
+    gender character varying COLLATE pg_catalog."default",
+    birthday date,
+    prof_id int REFERENCES "Profession"(prof_id),
+    zip_code int REFERENCES "zip_code"(zip_code),
+    status_id int REFERENCES "status"(status_id),
+    CONSTRAINT my_contacts_pkey PRIMARY KEY (contact_id)
 );
 
-CREATE TABLE "Salaries"
+CREATE TABLE IF NOT EXISTS public.seeking
 (
-    salaries_id bigserial NOT NULL,
-    salary_pa money,
-    CONSTRAINT salaries_pkey PRIMARY KEY (salaries_id)
+    seeking_id bigserial NOT NULL,
+    seeking text COLLATE pg_catalog."default",
+    CONSTRAINT seeking_pkey PRIMARY KEY (seeking_id)
 );
 
-INSERT INTO "OvertimeHours" (overtime_hours)
-VALUES 
-  (5),
-  (7),
-  (1),
-  (8),
-  (3),
-  (5),
-  (7),
-  (4),
-  (2),
-  (13);
+CREATE TABLE IF NOT EXISTS public.status
+(
+    status_id bigserial NOT NULL,
+    status character varying(25) COLLATE pg_catalog."default",
+    CONSTRAINT status_pkey PRIMARY KEY (status_id)
+);
 
-INSERT INTO "Roles" (role)
-VALUES 
-  ('HR'),
-  ('PR'),
-  ('Admin'),
-  ('Security'),
-  ('IT'),
-  ('Design'),
-  ('CEO'),
-  ('COO'),
-  ('Accounting'),
-  ('Marketing');
+CREATE TABLE IF NOT EXISTS public.zip_code
+(
+    zip_code bigserial NOT NULL,
+    city character varying(40) COLLATE pg_catalog."default",
+    "province/state" character varying(40) COLLATE pg_catalog."default",
+    CONSTRAINT zip_code_pkey PRIMARY KEY (zip_code)
+);
 
-INSERT INTO "Salaries" (salary_pa)
-VALUES 
-  (5000),
-  (12000),
-  (4000),
-  (2000),
-  (30200),
-  (21000),
-  (50000),
-  (43000),
-  (32000),
-  (18000);
+CREATE TABLE IF NOT EXISTS public.profession
+(
+    prof_id int NOT NULL,
+    profession character varying COLLATE pg_catalog."default",
+    CONSTRAINT profession_pkey PRIMARY KEY (prof_id)
+);
 
+-- inserting data
 
-INSERT INTO "Department" (depart_name, depart_city)
-VALUES 
-  ('Human Resource', 'Joburg'),
-  ('Public Relations', 'Joburg'),
-  ('Administrater', 'Joburg'),
-  ('Security', 'Joburg'),
-  ('Software and Tech', 'Joburg'),
-  ('Marketing', 'Joburg'),
-  ('Leaders', 'Pretoria'),
-  ('Leaders', 'Joburg'),
-  ('Accounting', 'Joburg'),
-  ('Marketing', 'Pretoria');
+INSERT INTO zip_code(zip_code, city, province)
+VALUES  ('35-174','Biloxi','Sinaloa'),
+  ('412357','Bauchi','Basilicata'),
+  ('49966','Cork','Limburg'),
+  ('477341','Itanagar','North Island'),
+  ('28463','Shimla','Massachusetts');
 
+INSERT INTO interests(interest)
+VALUES('fittness'),
+      ('volunteering'),
+	  ('adventure sports'),
+	  ('travel'),
+	  ('blogging');
+  
 
-INSERT INTO "Employees" (first_name, surname, gender, address, email, depart_id, role_id, salary_id, overtime_id)
-VALUES
-  ('Tasha','Kline', 'Female','1451 A St.','sit.amet.consectetuer@yahoo.ca', 1, 1, 1, 1),
-  ('Jamal','Watts', 'Female', '556-9451 In St.','in.molestie.tortor@protonmail.com', 2, 2, 2, 2),
-  ('Shana','Ramos', 'Female', '177-9008 Curabitur St.','sed.pede@google.org', 3, 3, 3, 3),
-  ('Rooney','Hicks', 'Male', '6615 Massa. St.','luctus.vulputate.nisi@aol.couk', 4, 4, 4, 4),
-  ('Perry','Pace', 'Male', 'P.O. Box 171, 7471 Phasellus Av','pede.nonummy.ut@yahoo.net', 5, 5, 5, 5),
-  ('Cecilia','Hubbard', 'Female', '206-9948 Pellentesque Avenue','donec@aol.edu', 6, 6, 6, 6),
-  ('Jerome', 'Flynn', 'Male', 'Ap #557-1255 Tincidunt Ave','cursus.integer@yahoo.ca', 7, 7, 7, 7),
-  ('Minerva','Spencer', 'Male', 'Ap #996-3155 Eu St.','montes.nascetur@protonmail.net', 8, 8, 8, 8),
-  ('Channing','Robinson', 'Male', 'P.O. Box 229, 3397 Quam Ave','diam@icloud.net', 9, 9, 9, 9),
-  ('Wing','Calhoun', 'Female', 'Ap #640-3599 Lorem St','ipsum@yahoo.net', 10, 10, 10, 10);
+INSERT INTO seeking(seeking)
+VALUES('steady relationship'),
+      ('hook-up'),
+	  ('friends'),
+	  ('partner');
+	  
+INSERT INTO status(status)
+VALUES('single'),
+	  ('devorced'),
+	  ('married'),
+      ('widowed');
 
+INSERT INTO my_contacts(last_name, first_name, phone, email, gender, birthday, prof_id, zip_code, status_id)
+VALUES("Armand Petty","(333) 383-5121","dui@protonmail.edu","male", 1, "35-174", 1),
+  ("Kay Montgomery","(921) 732-4364","malesuada@google.ca", "", 2, "412357", 3),
+  ("Aaron Casey","(321) 735-4555","amet.faucibus.ut@yahoo.ca","49966"),
+  ("Karen Hinton","(503) 473-5218","nibh.sit@icloud.com","477341"),
+  ("Lucy Langley","(482) 341-6349","faucibus.morbi.vehicula@yahoo.edu","28463");
+ 	  
 
-ALTER TABLE IF EXISTS public."Employees"
-    ADD CONSTRAINT overtime_id FOREIGN KEY (overtime_id)
-    REFERENCES public."OvertimeHours" (overtime_id) MATCH SIMPLE
-    ON UPDATE NO ACTION
-    ON DELETE CASCADE
-    NOT VALID;
+INSERT INTO contact_interest(contact_id, interest_id)
+VALUES(01, 4),
+      (02, 1),
+	  (03, 2),
+	  (04, 5),
+	  (05, 3);
+	 
 
+INSERT INTO contact_seeking(contact_id, seeking_id)
+VALUES(001, 1),
+      (002, 3),
+	  (003, 1),
+	  (004, 2),
+      (005, 1);
+	
 
-ALTER TABLE IF EXISTS public."Employees"
-    ADD CONSTRAINT role_id FOREIGN KEY (role_id)
-    REFERENCES public."Roles" (role_id) MATCH SIMPLE
+ALTER TABLE IF EXISTS public.contact_interest
+    ADD CONSTRAINT contact_id FOREIGN KEY (contact_id)
+    REFERENCES public.my_contacts (contact_id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
 
 
-ALTER TABLE IF EXISTS public."Employees"
-    ADD CONSTRAINT depart_id FOREIGN KEY (depart_id)
-    REFERENCES public."Department" (depart_id) MATCH SIMPLE
+ALTER TABLE IF EXISTS public.contact_interest
+    ADD CONSTRAINT interest_id FOREIGN KEY (interest_id)
+    REFERENCES public.interests (interest_id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
 
 
-ALTER TABLE IF EXISTS public."Employees"
-    ADD CONSTRAINT salary_id FOREIGN KEY (salary_id)
-    REFERENCES public.salaries (salaries_id) MATCH SIMPLE
+ALTER TABLE IF EXISTS public.contact_seeking
+    ADD CONSTRAINT contact_id FOREIGN KEY (contact_id)
+    REFERENCES public.my_contacts (contact_id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
 
 
+ALTER TABLE IF EXISTS public.contact_seeking
+    ADD CONSTRAINT seeking_id FOREIGN KEY (seeking_id)
+    REFERENCES public.seeking (seeking_id) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
 
 
-SELECT emp.first_name, emp.surname, emp.gender, emp.address, emp.email,
-depart.depart_name, depart.depart_city, 
-role.role,
-sal.salary_pa,
-ot.overtime_hours
-FROM "Employees" AS emp LEFT JOIN "Department" AS depart
-ON emp.depart_id = depart.depart_id
-LEFT JOIN "Roles" AS role
-ON emp.role_id = role.role_id
-LEFT JOIN "Salaries" AS sal
-ON emp.salary_id = sal.salaries_id
-LEFT JOIN "OvertimeHours" AS ot
-ON emp.overtime_id = ot.overtime_id;
+ALTER TABLE IF EXISTS public.my_contacts
+    ADD CONSTRAINT prof_id FOREIGN KEY (prof_id)
+    REFERENCES public.profession (prof_id) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
 
-drop table "Department";
-drop table "Roles";
-drop table "OvertimeHours";
-drop table "salaries";
-drop table "Employees";
+
+ALTER TABLE IF EXISTS public.my_contacts
+    ADD CONSTRAINT zip_code FOREIGN KEY (zip_code)
+    REFERENCES public.zip_code (zip_code) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+
+
+ALTER TABLE IF EXISTS public.my_contacts
+    ADD CONSTRAINT status_id FOREIGN KEY (status_id)
+    REFERENCES public.status (status_id) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+
+SELECT cont.last_name, cont.first_name, cont.phone, cont.email, cont.gender, cont.birthday,
+prof.profession,
+zip.city, zip.province,
+status.status,
+FROM my_contacts AS cont LEFT JOIN Profession AS prof
+ON cont.prof_id = prof.prof_id
+LEFT JOIN Zip_code
+ON cont.zip_id = zip.zip_code
+LEFT JOIN Status 
+ON cont.satus_id = status.status_id
+
 
 END;
