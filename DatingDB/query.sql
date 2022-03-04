@@ -178,14 +178,12 @@ SELECT cont.last_name, cont.first_name, cont.phone, cont.email, cont.gender, con
 prof.profession,
 zip.city, zip.province/state,
 status.status,
-FROM my_contacts AS cont LEFT JOIN Department AS dept
-ON emp.depart_id = dept.depart_id
-LEFT JOIN Role
-ON emp.role_id = role.role_id
-LEFT JOIN Salary AS sal
-ON emp.salary_id = sal.salary_id
-LEFT JOIN Overtime AS ot
-ON emp.overtime_id = ot.overtime_id
+FROM my_contacts AS cont LEFT JOIN Profession AS prof
+ON cont.prof_id = prof.prof_id
+LEFT JOIN Zip_code
+ON cont.zip_id = zip.zip_code
+LEFT JOIN Status 
+ON cont.satus_id = status.status_id
 
 
 END;

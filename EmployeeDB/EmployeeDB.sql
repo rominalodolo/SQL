@@ -60,6 +60,59 @@ VALUES
   ("Channing","Robinson", "Male", "P.O. Box 229, 3397 Quam Ave","diam@icloud.net"),
   ("Wing","Calhoun", "Female", "Ap #640-3599 Lorem St.","ipsum@yahoo.net");
 
+INSERT INTO `Overtime Hours` (`overtime_id`, `overtime_hours`)
+VALUES 
+  (1,5),
+  (2,7),
+  (3,1),
+  (4,8),
+  (5,3),
+  (6,5),
+  (7,7),
+  (8,4),
+  (9,2),
+  (10,3);
+
+INSERT INTO `Roles` (`role_id`, `role`)
+VALUES 
+  (1,"HR"),
+  (2,"PR"),
+  (3,"Admin"),
+  (4,"Security"),
+  (5,"IT"),
+  (6,"Design"),
+  (7,"CEO"),
+  (8,"COO"),
+  (9,"Accounting"),
+  (10,"Marketing");
+
+INSERT INTO `Salary` (`salaries_id`, `salary_pa`)
+VALUES 
+  (1,5000),
+  (2,12000),
+  (3,4000),
+  (4,2000),
+  (5,30200),
+  (6,21000),
+  (7,50000),
+  (8,43000),
+  (9,32000),
+  (10,18000);
+
+
+INSERT INTO `Department` (`depart_id`, `depart_name`, `depart_city`)
+VALUES 
+  (1,"Human Resource"),
+  (2,"Public Relations"),
+  (3,"Administrater"),
+  (4,"Security"),
+  (5,""),
+  (6,"Design"),
+  (7,"CEO"),
+  (8,"COO"),
+  (9,"Accounting"),
+  (10,"Marketing");
+
 ALTER TABLE IF EXISTS public."Employees"
     ADD CONSTRAINT overtime_id FOREIGN KEY (overtime_id)
     REFERENCES public."Overtime Hours" (overtime_id) MATCH SIMPLE
@@ -95,16 +148,16 @@ ALTER TABLE IF EXISTS public."Employees"
 
 
 SELECT emp.first_name, emp.surname, emp.gender, emp.address, emp.email,
-dept.depart_name, dept.depart_city, 
-role.role,
+depart.depart_name, depart.depart_city, 
+role."Roles",
 sal.salary_pa,
-ot.overtime_hours
+ot."Overtime Hours"
 FROM Employees AS emp LEFT JOIN Department AS dept
-ON emp.depart_id = dept.depart_id
+ON emp.depart_id = depart.depart_id
 LEFT JOIN Role
 ON emp.role_id = role.role_id
 LEFT JOIN Salary AS sal
-ON emp.salary_id = sal.salary_id
+ON emp.salaries_id = sal.salaries_id
 LEFT JOIN Overtime AS ot
 ON emp.overtime_id = ot.overtime_id
 
