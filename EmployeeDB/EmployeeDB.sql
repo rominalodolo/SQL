@@ -60,59 +60,59 @@ VALUES
   (9,2),
   (10,3);
 
-INSERT INTO `Roles` (`role_id`, `role`)
+INSERT INTO "Roles" (role)
 VALUES 
-  (1,"HR"),
-  (2,"PR"),
-  (3,"Admin"),
-  (4,"Security"),
-  (5,"IT"),
-  (6,"Design"),
-  (7,"CEO"),
-  (8,"COO"),
-  (9,"Accounting"),
-  (10,"Marketing");
+  ('HR'),
+  ('PR'),
+  ('Admin'),
+  ('Security'),
+  ('IT'),
+  ('Design'),
+  ('CEO'),
+  ('COO'),
+  ('Accounting'),
+  ('Marketing');
 
-INSERT INTO `Salary` (`salaries_id`, `salary_pa`)
+INSERT INTO "salaries" (salary_pa)
 VALUES 
-  (1,5000),
-  (2,12000),
-  (3,4000),
-  (4,2000),
-  (5,30200),
-  (6,21000),
-  (7,50000),
-  (8,43000),
-  (9,32000),
-  (10,18000);
+  (5000),
+  (12000),
+  (4000),
+  (2000),
+  (30200),
+  (21000),
+  (50000),
+  (43000),
+  (32000),
+  (18000);
 
 
-INSERT INTO `Department` (`depart_id`, `depart_name`, `depart_city`)
+INSERT INTO "Department" (depart_name, depart_city)
 VALUES 
-  (1,"Human Resource", "Joburg"),
-  (2,"Public Relations", "Joburg"),
-  (3,"Administrater", "Joburg"),
-  (4,"Security", "Joburg"),
-  (5,"Software and Tech", "Joburg"),
-  (6,"Marketing", "Joburg"),
-  (7,"Leaders", "Pretoria"),
-  (8,"Leaders", "Joburg"),
-  (9,"Accounting", "Joburg"),
-  (10,"Marketing", "Pretoria");
+  ('Human Resource', 'Joburg'),
+  ('Public Relations', 'Joburg'),
+  ('Administrater', 'Joburg'),
+  ('Security', 'Joburg'),
+  ('Software and Tech', 'Joburg'),
+  ('Marketing', 'Joburg'),
+  ('Leaders', 'Pretoria'),
+  ('Leaders', 'Joburg'),
+  ('Accounting', 'Joburg'),
+  ('Marketing', 'Pretoria');
 
 
-INSERT INTO Employees (first_name,surname, gender, address,email, depart_id, role_id, salary_id, overtime_id)
+INSERT INTO "Employees" (first_name, surname, gender, address, email, depart_id, role_id, salary_id, overtime_id)
 VALUES
-  ("Tasha","Kline", "Female","1451 A St.","sit.amet.consectetuer@yahoo.ca"),
-  ("Jamal","Watts", "Female", "556-9451 In St.","in.molestie.tortor@protonmail.com"),
-  ("Shana","Ramos", "Female", "177-9008 Curabitur St.","sed.pede@google.org"),
-  ("Rooney","Hicks", "Male", "6615 Massa. St.","luctus.vulputate.nisi@aol.couk"),
-  ("Perry","Pace", "Male", "P.O. Box 171, 7471 Phasellus Av.","pede.nonummy.ut@yahoo.net"),
-  ("Cecilia","Hubbard", "Female", "206-9948 Pellentesque Avenue","donec@aol.edu"),
-  ("Jerome","Flynn", "Male", "Ap #557-1255 Tincidunt Ave","cursus.integer@yahoo.ca"),
-  ("Minerva","Spencer", "Male", "Ap #996-3155 Eu St.","montes.nascetur@protonmail.net"),
-  ("Channing","Robinson", "Male", "P.O. Box 229, 3397 Quam Ave","diam@icloud.net"),
-  ("Wing","Calhoun", "Female", "Ap #640-3599 Lorem St.","ipsum@yahoo.net");
+  ('Tasha','Kline', 'Female','1451 A St.','sit.amet.consectetuer@yahoo.ca', 1, 1, 1),
+  ('Jamal','Watts', 'Female', '556-9451 In St.','in.molestie.tortor@protonmail.com', 2, 2, 2),
+  ('Shana','Ramos', 'Female', '177-9008 Curabitur St.','sed.pede@google.org', 3, 3, 3),
+  ('Rooney','Hicks', 'Male', '6615 Massa. St.','luctus.vulputate.nisi@aol.couk', 4, 4, 4),
+  ('Perry','Pace', 'Male', 'P.O. Box 171, 7471 Phasellus Av','pede.nonummy.ut@yahoo.net', 5, 5, 5),
+  ('Cecilia','Hubbard', 'Female', '206-9948 Pellentesque Avenue','donec@aol.edu', 6, 6, 6),
+  ('Jerome', 'Flynn', 'Male', 'Ap #557-1255 Tincidunt Ave','cursus.integer@yahoo.ca', 7, 7, 7),
+  ('Minerva','Spencer', 'Male', 'Ap #996-3155 Eu St.','montes.nascetur@protonmail.net', 8, 8, 8),
+  ('Channing','Robinson', 'Male', 'P.O. Box 229, 3397 Quam Ave','diam@icloud.net', 9, 9, 9),
+  ('Wing','Calhoun', 'Female', 'Ap #640-3599 Lorem St','ipsum@yahoo.net', 10, 10, 10 );
 
 
 ALTER TABLE IF EXISTS public."Employees"
