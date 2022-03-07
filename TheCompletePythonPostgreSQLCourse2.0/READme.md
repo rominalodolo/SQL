@@ -116,5 +116,6 @@ Download `psycopg2-binary` if you are new to code and make sure you only have on
 
 `pip install psycopg2` Run in terminal for the standard psycopg2 package
 
+Downloading PyCharm [Download Here](https://www.jetbrains.com/pycharm/promo/?source=google&medium=cpc&campaign=14124132465&gclid=Cj0KCQiA95aRBhCsARIsAC2xvfxIi8WJsJqdF5idc6aPVxEOPPtFQDonuRzjD2_qyPzOS04LHax6jPwaAiraEALw_wcB)
 
 LAST EDIT March 2022
