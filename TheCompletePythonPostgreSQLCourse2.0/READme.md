@@ -93,4 +93,11 @@ data.db file:
 
 ![datamovielist](https://user-images.githubusercontent.com/83961643/154804371-87fbda2b-a15f-43a4-af37-8642436b999b.jpeg)
 
+
+# Different Database viewers and Servers
+- [ElephantSQL](https://www.elephantsql.com)
+- [pgAdmin](https://www.pgadmin.org)
+- [HeidiSQL](www.heidisql.com)  
+
+
 LAST EDIT March 2022
