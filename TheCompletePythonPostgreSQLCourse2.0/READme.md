@@ -85,7 +85,7 @@ The WHERE clause goes after SELECT * ... ie table name:
 ![run3](https://user-images.githubusercontent.com/83961643/154639582-41952397-0974-4f72-82a8-837264ce091e.jpeg)
 
 
-## Movie Watch List App
+# Movie Watch List App
 
 ![terminalmoviewatchlist](https://user-images.githubusercontent.com/83961643/154694260-30bd7496-f2ce-47fe-be15-72c37153d5ff.jpeg)
 
