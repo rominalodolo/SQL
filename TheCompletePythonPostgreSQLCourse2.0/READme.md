@@ -107,4 +107,8 @@ Working with ElephantSQL:
 ![execute](https://user-images.githubusercontent.com/83961643/157055840-db0dd2a5-6957-4e0e-9d36-a74d67b9242d.jpeg)
 
 
+Psycopg – PostgreSQL database adapter for Python
+Download `psycopg2-binary` if you are new to code and make sure you only have one version installed. 
+[Documentation](https://www.psycopg.org/docs/)
+
 LAST EDIT March 2022
