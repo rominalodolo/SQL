@@ -111,7 +111,9 @@ Psycopg
 – PostgreSQL database adapter for Python
 
 Download `psycopg2-binary` if you are new to code and make sure you only have one version installed. 
+
 [Documentation](https://www.psycopg.org/docs/)
+
 `pip install psycopg2` Run in terminal for the standard psycopg2 package
 
 
