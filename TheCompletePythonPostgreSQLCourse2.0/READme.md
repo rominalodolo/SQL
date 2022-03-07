@@ -103,6 +103,8 @@ data.db file:
 Working with ElephantSQL:
 ![1](https://user-images.githubusercontent.com/83961643/157055356-bf02a134-2646-4e97-a637-0ff39c834054.jpeg)
 ![2](https://user-images.githubusercontent.com/83961643/157055431-ddd1e2c4-a3d7-47eb-bf28-cfd1e4d09849.jpeg)
+![3](https://user-images.githubusercontent.com/83961643/157055823-98a88ebf-5387-4157-86f7-c38789c969ee.jpeg)
+![execute](https://user-images.githubusercontent.com/83961643/157055840-db0dd2a5-6957-4e0e-9d36-a74d67b9242d.jpeg)
 
 
 LAST EDIT March 2022
