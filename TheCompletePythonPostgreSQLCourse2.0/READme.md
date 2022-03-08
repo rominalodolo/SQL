@@ -85,7 +85,7 @@ The WHERE clause goes after SELECT * ... ie table name:
 ![run3](https://user-images.githubusercontent.com/83961643/154639582-41952397-0974-4f72-82a8-837264ce091e.jpeg)
 
 
-## Movie Watch List App
+# Movie Watch List App
 
 ![terminalmoviewatchlist](https://user-images.githubusercontent.com/83961643/154694260-30bd7496-f2ce-47fe-be15-72c37153d5ff.jpeg)
 
@@ -93,4 +93,41 @@ data.db file:
 
 ![datamovielist](https://user-images.githubusercontent.com/83961643/154804371-87fbda2b-a15f-43a4-af37-8642436b999b.jpeg)
 
-LAST EDIT February 2022
+
+# Different Database viewers and Servers
+- [ElephantSQL](https://www.elephantsql.com)
+- [pgAdmin](https://www.pgadmin.org)
+- [HeidiSQL](www.heidisql.com)  
+
+
+Working with ElephantSQL:
+![1](https://user-images.githubusercontent.com/83961643/157055356-bf02a134-2646-4e97-a637-0ff39c834054.jpeg)
+![2](https://user-images.githubusercontent.com/83961643/157055431-ddd1e2c4-a3d7-47eb-bf28-cfd1e4d09849.jpeg)
+![3](https://user-images.githubusercontent.com/83961643/157055823-98a88ebf-5387-4157-86f7-c38789c969ee.jpeg)
+![execute](https://user-images.githubusercontent.com/83961643/157055840-db0dd2a5-6957-4e0e-9d36-a74d67b9242d.jpeg)
+
+
+Psycopg 
+– PostgreSQL database adapter for Python
+
+Download `psycopg2-binary` if you are new to code and make sure you only have one version installed. 
+
+[Documentation](https://www.psycopg.org/docs/)
+
+`pip install psycopg2` Run in terminal for the standard psycopg2 package
+
+Downloading PyCharm [Download Here](https://www.jetbrains.com/pycharm/promo/?source=google&medium=cpc&campaign=14124132465&gclid=Cj0KCQiA95aRBhCsARIsAC2xvfxIi8WJsJqdF5idc6aPVxEOPPtFQDonuRzjD2_qyPzOS04LHax6jPwaAiraEALw_wcB)
+
+## SEQUENCE in SQL
+- A number generator 
+- Table with a column and a row 
+- Values starts at 1
+- PostgreSQL comes with operations to increment the value or to get the current value
+
+## SERIAL in SQL 
+- Shortcut 
+- Used as a data type when creating a table instead of INTEGER 
+- Automatically creates a SEQUENCE for you & increases it's alue every time a new row is added
+- That new value will be used by defulat when adding new rows
+
+LAST EDIT March 2022
