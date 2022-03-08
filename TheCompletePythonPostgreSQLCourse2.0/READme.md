@@ -118,7 +118,7 @@ Download `psycopg2-binary` if you are new to code and make sure you only have on
 
 Downloading PyCharm [Download Here](https://www.jetbrains.com/pycharm/promo/?source=google&medium=cpc&campaign=14124132465&gclid=Cj0KCQiA95aRBhCsARIsAC2xvfxIi8WJsJqdF5idc6aPVxEOPPtFQDonuRzjD2_qyPzOS04LHax6jPwaAiraEALw_wcB)
 
-## Sequence in SQL
+## SEQUENCE in SQL
 - A number generator 
 - Table with a column and a row 
 - Values starts at 1
