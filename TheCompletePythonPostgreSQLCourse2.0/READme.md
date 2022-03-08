@@ -124,4 +124,10 @@ Downloading PyCharm [Download Here](https://www.jetbrains.com/pycharm/promo/?sou
 - Values starts at 1
 - PostgreSQL comes with operations to increment the value or to get the current value
 
+## SERIAL in SQL 
+- Shortcut 
+- Used as a data type when creating a table instead of INTEGER 
+- Automatically creates a SEQUENCE for you & increases it's alue every time a new row is added
+- That new value will be used by defulat when adding new rows
+
 LAST EDIT March 2022
