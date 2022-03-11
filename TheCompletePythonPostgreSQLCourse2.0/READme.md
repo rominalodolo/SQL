@@ -137,4 +137,8 @@ Downloading PyCharm [Download Here](https://www.jetbrains.com/pycharm/promo/?sou
 
 # Python & Advanced PostgreSQL with psycopg2
 
+
+# Charting data from our tables using matplotlib
+
+
 LAST EDIT March 2022
