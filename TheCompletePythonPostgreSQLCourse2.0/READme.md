@@ -135,5 +135,6 @@ Downloading PyCharm [Download Here](https://www.jetbrains.com/pycharm/promo/?sou
 
 # Working with dates and times 
 
+# Python & Advanced PostgreSQL with psycopg2
 
 LAST EDIT March 2022
