@@ -132,9 +132,16 @@ Downloading PyCharm [Download Here](https://www.jetbrains.com/pycharm/promo/?sou
 
 ## ACID 
 - atomicity
+    - transactions are indivisible: every operation should be successful otherwise none do
+    - EG: if you try to UPDATE & INSERT in the same transaction, if one fails the other is rolled back or just ignored.
 - consistency
+    - rules & constraints of the database are followed at all times
+    - EG: foreign key constraints, you can't have a foreign key pointing ti a non-existing primary key value.
+    - More constraints: UNIQUE, NOT NULL. 
 - isolation
+    - 
 - durability
+
 
 # Poll App 
 
