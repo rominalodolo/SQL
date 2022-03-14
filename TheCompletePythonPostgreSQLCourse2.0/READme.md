@@ -149,6 +149,12 @@ Downloading PyCharm [Download Here](https://www.jetbrains.com/pycharm/promo/?sou
 
 # Poll App 
 
+To install the requirements I opened terminal at the Poll App folder in VScode and ran these commands: 
+`pip install psycopg2-binary==2.8.5`
+`pip install python-dotenv==0.13.0`
+![terminalPollApp](https://user-images.githubusercontent.com/83961643/158191296-24f7ddef-5ecd-4a18-972b-e50a7ea32a35.jpeg)
+
+
 # Working with dates and times 
 
 # Python & Advanced PostgreSQL with psycopg2
