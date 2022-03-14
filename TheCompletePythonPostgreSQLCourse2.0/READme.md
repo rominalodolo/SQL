@@ -139,8 +139,12 @@ Downloading PyCharm [Download Here](https://www.jetbrains.com/pycharm/promo/?sou
     - EG: foreign key constraints, you can't have a foreign key pointing ti a non-existing primary key value.
     - More constraints: UNIQUE, NOT NULL. 
 - isolation
-    - 
+    - data is only vivible in the database when the transaction has ended & committed.
+    - EG: if one transaction makes 10 INSERTs, another transaction won't see any of that data until the former has been committed. 
 - durability
+    - data is saved to permanent storage once a transaction is committed
+    - contrasted to other databases that operate partially / fully "in memory"
+    - operating in memory is faster, but riskier. Use a database that operates in memory for things you don't mind losing. 
 
 
 # Poll App 
