@@ -92,7 +92,7 @@ def menu():
 
     connection = psycopg2.connect(database_uri)
     database.create_tables(connection)
-
+ 
     while (selection := input(MENU_PROMPT)) != "6":
         try:
             MENU_OPTIONS[selection](connection)
