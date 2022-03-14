@@ -130,6 +130,11 @@ Downloading PyCharm [Download Here](https://www.jetbrains.com/pycharm/promo/?sou
 - Automatically creates a SEQUENCE for you & increases it's alue every time a new row is added
 - That new value will be used by defulat when adding new rows
 
+## ACID 
+- atomicity
+- consistency
+- isolation
+- durability
 
 # Poll App 
 
