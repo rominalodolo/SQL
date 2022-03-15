@@ -169,6 +169,9 @@ Creating the `.env` file for your app
 
 ![pollApp](https://user-images.githubusercontent.com/83961643/158342851-e0f5f389-f660-47a5-a3b6-d190c59f1e57.jpeg)
 
+### Checking to see if the data shows up in ElephantSQL 
+![results1](https://user-images.githubusercontent.com/83961643/158344073-e6dde30a-6501-43ee-81c4-88c6deaa0112.jpeg)
+![results2](https://user-images.githubusercontent.com/83961643/158344080-2ea30022-029d-4743-bcdd-def2e1f4ddd4.jpeg)
 
 
 
