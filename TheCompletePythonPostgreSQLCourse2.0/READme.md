@@ -174,7 +174,9 @@ Creating the `.env` file for your app
 ![results2](https://user-images.githubusercontent.com/83961643/158344080-2ea30022-029d-4743-bcdd-def2e1f4ddd4.jpeg)
 
 # PostgresSQL Window Functions 
-![Data](https://user-images.githubusercontent.com/83961643/158375050-c61f0e14-959f-485b-87df-a10996fb700f.png)
+![2](https://user-images.githubusercontent.com/83961643/158379415-57bb474c-a065-4d25-90c4-039a4eb733f8.png)
+![PostgresWindowFunctions](https://user-images.githubusercontent.com/83961643/158379451-29f9128f-3b07-497d-9b2a-09ee583e805b.png)
+
 
 Rather use the window function: `OVER()`  
 It operates on the related rows, rather than on the same rows as it would without OVER()
