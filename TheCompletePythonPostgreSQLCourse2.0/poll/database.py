@@ -17,6 +17,7 @@ JOIN options ON polls.id = options.poll_id
 WHERE polls.id = (
     SELECT id FROM polls ORDER BY id DESC LIMIT 1 
 );"""
+SELECT_RANDOM_VOTE = "SELECT * FROM votes WHERE option_id = %s ORDER BY RANDOM() LIMIT 1;"
 
 INSERT_POLL_RETURN_ID = "INSERT INTO polls (title, owner_username)VALUES (%s, %s) RETURNING id;"
 INSERT_OPTION = "INSERT INTO options (option_text, poll_id) VALUES %s;"
@@ -41,7 +42,8 @@ def get_polls(connection):
 def get_latest_poll(connection):
     with connection:
         with connection.cursor() as cursor:
-            pass
+            cursor.execute(SELECT_LATEST_POLL)
+            return cursor.fetchall()
 
 
 def get_poll_details(connection, poll_id):
@@ -60,7 +62,8 @@ def get_poll_and_vote_results(connection, poll_id):
 def get_random_poll_vote(connection, option_id):
     with connection:
         with connection.cursor() as cursor:
-            pass
+            cursor.execute(SELECT_RANDOM_VOTE, (option_id,))
+            return cursor.fetchone()
 
 
 def create_poll(connection, title, owner, options):
