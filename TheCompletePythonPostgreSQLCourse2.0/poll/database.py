@@ -11,6 +11,7 @@ SELECT_POLL_WITH_OPTIONS = """SELECT * FROM polls
 JOIN options ON polls.id = options.poll_id
 WHERE polls.id = %s;"""
 
+INSERT_POLL_RETURN_ID = "INSERT INTO polls (title, owner_username)VALUES (%s, %s) RETURNING id;"
 INSERT_OPTION = "INSERT INTO options (option_text, poll_id) VALUES %s;"
 INSERT_VOTE = "INSERT INTO votes (username, option_id) VALUES (%s, %s);"
 
@@ -58,7 +59,7 @@ def get_random_poll_vote(connection, option_id):
 def create_poll(connection, title, owner, options):
     with connection:
         with connection.cursor() as cursor:
-            cursor.execute("INSERT INTO polls VALUES (%s, %s);" (title, owner))
+            cursor.execute(INSERT_POLL_RETURN_ID, (title, owner))
             cursor.execute("SELECT id FROM polls ORDER BY id DESC LIMIT 1;")
 
             poll_id = cursor.fetchone()[0]
