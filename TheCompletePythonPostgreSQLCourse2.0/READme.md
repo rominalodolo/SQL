@@ -161,6 +161,8 @@ To install the requirements I opened terminal at the Poll App folder in VScode a
 ### API & Linking Database
 Creating the `.env` file for your app 
 `DATABASE_URI=` and the postgres link from your ElephantSQL - Instance - Details - URL - section. 
+![URL](https://user-images.githubusercontent.com/83961643/158336466-31051cd3-d851-427f-9561-ea7550f8bae9.jpeg)
+
 ![workingpollapp](https://user-images.githubusercontent.com/83961643/158334004-b1894aaa-09c7-48c5-bde7-d1950bdcc5d7.jpeg)
 
 
