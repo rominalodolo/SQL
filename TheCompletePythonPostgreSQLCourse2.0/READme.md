@@ -174,6 +174,7 @@ Creating the `.env` file for your app
 ![results2](https://user-images.githubusercontent.com/83961643/158344080-2ea30022-029d-4743-bcdd-def2e1f4ddd4.jpeg)
 
 # PostgresSQL Window Functions 
+![Data](https://user-images.githubusercontent.com/83961643/158375050-c61f0e14-959f-485b-87df-a10996fb700f.png)
 
 
 # Working with dates and times 
