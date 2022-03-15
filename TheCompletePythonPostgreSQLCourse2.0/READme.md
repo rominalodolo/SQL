@@ -164,6 +164,9 @@ Creating the `.env` file for your app
 ![URL](https://user-images.githubusercontent.com/83961643/158336466-31051cd3-d851-427f-9561-ea7550f8bae9.jpeg)
 
 ![workingpollapp](https://user-images.githubusercontent.com/83961643/158334004-b1894aaa-09c7-48c5-bde7-d1950bdcc5d7.jpeg)
+
+### Poll App Menu in the Visual Studio Code Terminal 
+
 ![pollApp](https://user-images.githubusercontent.com/83961643/158342851-e0f5f389-f660-47a5-a3b6-d190c59f1e57.jpeg)
 
 
