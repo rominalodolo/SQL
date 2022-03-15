@@ -154,6 +154,12 @@ To install the requirements I opened terminal at the Poll App folder in VScode a
 `pip install python-dotenv==0.13.0`
 ![terminalPollApp](https://user-images.githubusercontent.com/83961643/158191296-24f7ddef-5ecd-4a18-972b-e50a7ea32a35.jpeg)
 
+Creating the .env file for your app 
+`DATABASE_URI=` and the postgres link from your ElephantSQL - Instance - Details - URL - section. 
+![workingpollapp](https://user-images.githubusercontent.com/83961643/158334004-b1894aaa-09c7-48c5-bde7-d1950bdcc5d7.jpeg)
+
+
+
 
 # Working with dates and times 
 
