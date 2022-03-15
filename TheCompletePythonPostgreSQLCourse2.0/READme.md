@@ -176,10 +176,10 @@ Creating the `.env` file for your app
 # PostgresSQL Window Functions 
 
 ![PostgresWindowFunctions](https://user-images.githubusercontent.com/83961643/158379451-29f9128f-3b07-497d-9b2a-09ee583e805b.png)
-![2](https://user-images.githubusercontent.com/83961643/158379415-57bb474c-a065-4d25-90c4-039a4eb733f8.png)
-
 Rather use the window function: `OVER()`  
 It operates on the related rows, rather than on the same rows as it would without OVER()
+![2](https://user-images.githubusercontent.com/83961643/158379415-57bb474c-a065-4d25-90c4-039a4eb733f8.png)
+
 
 # Working with dates and times 
 
