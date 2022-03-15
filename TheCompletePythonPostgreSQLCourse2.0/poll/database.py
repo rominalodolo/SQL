@@ -12,6 +12,11 @@ SELECT_ALL_POLLS = "SELECT * FROM polls;"
 SELECT_POLL_WITH_OPTIONS = """SELECT * FROM polls
 JOIN options ON polls.id = options.poll_id
 WHERE polls.id = %s;"""
+SELECT_LATEST_POLL = """SELECT * FROM polls 
+JOIN options ON polls.id = options.poll_id
+WHERE polls.id = (
+    SELECT id FROM polls ORDER BY id DESC LIMIT 1 
+);"""
 
 INSERT_POLL_RETURN_ID = "INSERT INTO polls (title, owner_username)VALUES (%s, %s) RETURNING id;"
 INSERT_OPTION = "INSERT INTO options (option_text, poll_id) VALUES %s;"
@@ -72,7 +77,7 @@ def create_poll(connection, title, owner, options):
             # for option_value in option_values:
             #     cursor.execute(INSERT_OPTION, option_value)
 
-
+ 
 def add_poll_vote(connection, username, option_id):
     with connection:
         with connection.cursor() as cursor:
