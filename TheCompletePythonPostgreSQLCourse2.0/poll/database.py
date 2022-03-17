@@ -1,6 +1,8 @@
 from typing import List, Tuple
 from psycopg2.extras import execute_values
 
+Poll = Tuple[int, str, str]
+
 CREATE_POLLS = """CREATE TABLE IF NOT EXISTS polls
 (id SERIAL PRIMARY KEY, title TEXT, owner_username TEXT);"""
 CREATE_OPTIONS = """CREATE TABLE IF NOT EXISTS options
