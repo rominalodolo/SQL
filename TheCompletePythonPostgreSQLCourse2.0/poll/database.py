@@ -76,8 +76,8 @@ def get_poll_and_vote_results(connection, poll_id: int) -> List[PollResults]:
             return cursor.fetchall()
 
 
-def get_random_poll_vote(connection, option_id: int):
-    with connection:
+def get_random_poll_vote(connection, option_id: int) -> Vote:
+    with connection: 
         with connection.cursor() as cursor:
             cursor.execute(SELECT_RANDOM_VOTE, (option_id,))
             return cursor.fetchone()
