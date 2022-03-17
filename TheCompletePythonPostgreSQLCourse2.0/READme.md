@@ -200,7 +200,8 @@ It operates on the related rows, rather than on the same rows as it would withou
 [READ MORE](https://www.postgresql.org/docs/12/sql-createview.html)
 
 # Working with dates and times 
-
+![dateandtimes](https://user-images.githubusercontent.com/83961643/158775424-ffe547b3-ebad-44da-b05e-1b43963b3268.jpeg)
+[Read more on pytz](http://pytz.sourceforge.net)
 
 # Python & Advanced PostgreSQL with psycopg2
 
