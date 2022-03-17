@@ -2,6 +2,7 @@
     "cSpell.words": [
         "astimezone",
         "dotenv",
-        "psycopg"
+        "psycopg",
+        "pytz"
     ]
 }
