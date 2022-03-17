@@ -187,7 +187,9 @@ It operates on the related rows, rather than on the same rows as it would withou
     - DISTINCT ON requires an ORDER BY for consistency
  [Read More on DISTINCT](https://www.postgresqltutorial.com/postgresql-select-distinct/)
     
-
+## HAVING clause
+    - HAVING clause is used for filtering after aggregating 
+    - WHERE clause is used for filtering before aggregating
 
 # Working with dates and times 
 
