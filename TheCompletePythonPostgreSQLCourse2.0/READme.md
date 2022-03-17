@@ -203,6 +203,10 @@ It operates on the related rows, rather than on the same rows as it would withou
 ![dateandtimes](https://user-images.githubusercontent.com/83961643/158775424-ffe547b3-ebad-44da-b05e-1b43963b3268.jpeg)
 [Read more on pytz](http://pytz.sourceforge.net)
 
+![installpytz](https://user-images.githubusercontent.com/83961643/158776627-a185e6ab-7432-46d3-b4ab-5fe0d7cd43d1.jpeg)
+[Error message link](https://docs.python.org/3/tutorial/venv.html)
+
+
 # Python & Advanced PostgreSQL with psycopg2
 
 
