@@ -191,7 +191,16 @@ It operates on the related rows, rather than on the same rows as it would withou
     - HAVING clause is used for filtering after aggregating 
     - WHERE clause is used for filtering before aggregating
 
+## Views 
+- a name for a query 
+- behaves like a table in a few ways 
+- every time the View is accessed, the query is executed 
+- that means the view is never materialised 
+
+[READ MORE](https://www.postgresql.org/docs/12/sql-createview.html)
+
 # Working with dates and times 
+
 
 # Python & Advanced PostgreSQL with psycopg2
 
