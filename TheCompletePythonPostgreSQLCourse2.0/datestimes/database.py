@@ -90,8 +90,7 @@ def get_option(connection, option_id: int) -> Option:
 def add_option(connection, option_text: str, poll_id: int):
     with get_cursor(connection) as cursor:
         cursor.execute(INSERT_OPTION, (option_text, poll_id))
-
-
+ 
 # -- votes --
 
 
