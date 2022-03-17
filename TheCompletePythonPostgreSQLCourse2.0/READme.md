@@ -181,6 +181,14 @@ It operates on the related rows, rather than on the same rows as it would withou
 ![Data](https://user-images.githubusercontent.com/83961643/158380611-fd83be59-0478-4d13-b49c-e8b826daa81a.png)
 [More on Window Functions](https://www.postgresqltutorial.com/postgresql-window-function/)
 
+## DISTINCT & DISTINCT ON 
+    - DISTINCT ON applies on a single column and can be used in multiple columns
+    - DISTINCT applies on all columns being SELECTed 
+    - DISTINCT ON requires an ORDER BY for consistency
+ [Read More on DISTINCT](https://www.postgresqltutorial.com/postgresql-select-distinct/)
+    
+
+
 # Working with dates and times 
 
 # Python & Advanced PostgreSQL with psycopg2
