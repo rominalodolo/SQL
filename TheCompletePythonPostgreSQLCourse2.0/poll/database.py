@@ -2,6 +2,9 @@ from typing import List, Tuple
 from psycopg2.extras import execute_values
 
 Poll = Tuple[int, str, str]
+Vote = Tuple[str, int]
+PollWithOption = Tuple[int, str, str, int, str, int]
+PollResults = Tuple[int, str, int, float]
 
 CREATE_POLLS = """CREATE TABLE IF NOT EXISTS polls
 (id SERIAL PRIMARY KEY, title TEXT, owner_username TEXT);"""
@@ -45,7 +48,7 @@ def create_tables(connection):
             cursor.execute(CREATE_VOTES)
 
 
-def get_polls(connection):
+def get_polls(connection) -> List[Poll]:
     with connection:
         with connection.cursor() as cursor:
             cursor.execute(SELECT_ALL_POLLS)
