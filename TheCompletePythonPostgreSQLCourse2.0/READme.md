@@ -211,6 +211,7 @@ It operates on the related rows, rather than on the same rows as it would withou
 
 
 # Charting data from our tables using matplotlib
+![pip](https://user-images.githubusercontent.com/83961643/158846835-c3228d0a-06ce-4f72-9b08-e2f42577ee8d.jpeg)
 
 
 LAST EDIT March 2022
