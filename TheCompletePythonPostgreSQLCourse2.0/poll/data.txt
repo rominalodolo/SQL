@@ -1,0 +1,44 @@
+CREATE TABLE polls (id INTEGER, title TEXT, owner_username TEXT);
+CREATE TABLE options (id INTEGER PRIMARY KEY, option_text TEXT, poll_id INTEGER);
+CREATE TABLE votes (username TEXT, option_id INTEGER, FOREIGN KEY(option_id) REFERENCES options(id));
+
+INSERT INTO polls VALUES (1, 'Flask vs. Django', 'jose');
+INSERT INTO polls VALUES (2, 'Python vs. Java', 'rolf');
+INSERT INTO polls VALUES (3, 'Windows vs. Mac', 'bob');
+
+INSERT INTO options VALUES (1, 'Flask', 1);
+INSERT INTO options VALUES (2, 'Django', 1);
+INSERT INTO options VALUES (3, 'It Depends', 1);
+INSERT INTO options VALUES (4, 'Python', 2);
+INSERT INTO options VALUES (5, 'Java', 2);
+INSERT INTO options VALUES (6, 'Windows', 3);
+INSERT INTO options VALUES (7, 'Mac', 3);
+
+INSERT INTO votes VALUES ('jose', 1);
+INSERT INTO votes VALUES ('charlie', 1);
+INSERT INTO votes VALUES ('ammar', 1);
+INSERT INTO votes VALUES ('rolf', 2);
+INSERT INTO votes VALUES ('bob', 2);
+INSERT INTO votes VALUES ('anne', 4);
+INSERT INTO votes VALUES ('eric', 4);
+INSERT INTO votes VALUES ('jose', 4);
+INSERT INTO votes VALUES ('charlie', 4);
+INSERT INTO votes VALUES ('ammar', 4);
+INSERT INTO votes VALUES ('rolf', 4);
+INSERT INTO votes VALUES ('bob', 4);
+INSERT INTO votes VALUES ('anne', 5);
+INSERT INTO votes VALUES ('eric', 5);
+INSERT INTO votes VALUES ('bob', 4);
+INSERT INTO votes VALUES ('anne', 6);
+INSERT INTO votes VALUES ('eric', 7);
+
+
+SELECT
+  polls.title,
+  COUNT(votes) as vote_count,
+  RANK() OVER(ORDER BY COUNT(votes) DESC)
+FROM polls
+LEFT JOIN options ON options.poll_id = polls.id
+LEFT JOIN votes ON votes.option_id = options.id
+GROUP BY polls.title
+ORDER BY vote_count ASC;
