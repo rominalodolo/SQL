@@ -179,7 +179,7 @@ Creating the `.env` file for your app
 Rather use the window function: `OVER()`  
 It operates on the related rows, rather than on the same rows as it would without OVER()
 ![Data](https://user-images.githubusercontent.com/83961643/158380611-fd83be59-0478-4d13-b49c-e8b826daa81a.png)
-
+[More on Window Functions](https://www.postgresqltutorial.com/postgresql-window-function/)
 
 # Working with dates and times 
 
