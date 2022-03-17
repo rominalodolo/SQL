@@ -206,6 +206,11 @@ It operates on the related rows, rather than on the same rows as it would withou
 ![installpytz](https://user-images.githubusercontent.com/83961643/158776627-a185e6ab-7432-46d3-b4ab-5fe0d7cd43d1.jpeg)
 [Error message link](https://docs.python.org/3/tutorial/venv.html)
 
+Working App:
+![app](https://user-images.githubusercontent.com/83961643/158878343-a229d43b-ed18-42bd-8caf-01a5767637e4.jpeg)
+
+![results](https://user-images.githubusercontent.com/83961643/158878399-19ecc4a0-4d4d-48a5-b085-49cbe138188f.jpeg)
+
 
 # Python & Advanced PostgreSQL with psycopg2
 
