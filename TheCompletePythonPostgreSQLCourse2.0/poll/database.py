@@ -55,21 +55,21 @@ def get_polls(connection) -> List[Poll]:
             return cursor.fetchall()
 
 
-def get_latest_poll(connection):
+def get_latest_poll(connection) -> List[PollWithOption]:
     with connection:
         with connection.cursor() as cursor:
             cursor.execute(SELECT_LATEST_POLL)
             return cursor.fetchall()
 
 
-def get_poll_details(connection, poll_id: int):
+def get_poll_details(connection, poll_id: int) -> List[PollWithOption]:
     with connection:
         with connection.cursor() as cursor:
             cursor.execute(SELECT_POLL_WITH_OPTIONS, (poll_id,))
             return cursor.fetchall()
 
 
-def get_poll_and_vote_results(connection, poll_id: int):
+def get_poll_and_vote_results(connection, poll_id: int) -> List[PollResults]:
     with connection:
         with connection.cursor() as cursor:
             cursor.execute(SELECT_POLL_VOTE_DETAILS, (poll_id,))
