@@ -237,6 +237,9 @@ You can't commit or roll back in functions. Use stored proceedures for that.
 - Query Language (SQL) Functions
 [READ MORE](https://www.postgresql.org/docs/12/xfunc-sql.html)
 
+- PL/pgSQL Function Parameter Modes
+[READ MORE](https://www.postgresqltutorial.com/plpgsql-function-parameters/)
+
 # Charting data from our tables using matplotlib
 ![pip](https://user-images.githubusercontent.com/83961643/158846835-c3228d0a-06ce-4f72-9b08-e2f42577ee8d.jpeg)
 
