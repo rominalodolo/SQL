@@ -299,5 +299,7 @@ You can't commit or roll back in functions. Use stored proceedures for that.
 # Charting data from our tables using matplotlib
 ![pip](https://user-images.githubusercontent.com/83961643/158846835-c3228d0a-06ce-4f72-9b08-e2f42577ee8d.jpeg)
 
+![example](https://user-images.githubusercontent.com/83961643/158987663-29ece9fa-dd2e-4343-bd29-5d7e7550f8d3.jpeg)
+![test2](https://user-images.githubusercontent.com/83961643/158988142-0abdfd25-4119-441a-8434-bd75db5b9155.jpeg)
 
 LAST EDIT March 2022
