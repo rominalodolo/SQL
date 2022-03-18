@@ -1,4 +1,3 @@
-from multiprocessing import connection
 import os
 import psycopg2
 from dotenv import load_dotenv
@@ -22,5 +21,5 @@ def get_polls():
 def get_options(poll_id: int):
     with connection:
         with connection.cursor() as cursor:
-            cursor.execute(SELECT_OPTIONS_IN_POLL, (poll_id))
+            cursor.execute(SELECT_OPTIONS_IN_POLL, (poll_id,))
             return cursor.fetchall()
