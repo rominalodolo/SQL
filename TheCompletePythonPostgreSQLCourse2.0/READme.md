@@ -262,6 +262,13 @@ You can't commit or roll back in functions. Use stored proceedures for that.
 "A transaction is a logical unit of work that contains one or more than one SQL statements where either all statements will succeed or all will fail. The SQL statements are NOT visible to other user sessions, and if something goes wrong, it won’t affect the database." - Tushar Ahuja
 [READ MORE](https://www.enterprisedb.com/postgres-tutorials/how-work-postgresql-transactions)
 
+## Locking in PostgreSQL 
+- Table-level locking (limiting access to tables)
+- Row-level locking (limits access to individual rows)
+- Advisory locking (just suggestions, don't actually limit)
+[Article](https://www.citusdata.com/blog/2018/02/15/when-postgresql-blocks/)
+[Viewing Locks](https://www.postgresql.org/docs/12/monitoring-locks.html)
+
 
 # Charting data from our tables using matplotlib
 ![pip](https://user-images.githubusercontent.com/83961643/158846835-c3228d0a-06ce-4f72-9b08-e2f42577ee8d.jpeg)
