@@ -290,7 +290,11 @@ You can't commit or roll back in functions. Use stored proceedures for that.
 
 ## Psycopg 2.9.3 documentation
 [Basic Module Usage](https://www.psycopg.org/docs/usage.html#thread-and-process-safety)
+
 [SQL String Composition](https://www.psycopg.org/docs/sql.html)
+- `sql.Identifier` used for tables and columns 
+- `sql.Literal` used for values hardcoded in the query 
+- `sql.Placeholder` for values to be passed later (or %s can be used instead)
 
 # Charting data from our tables using matplotlib
 ![pip](https://user-images.githubusercontent.com/83961643/158846835-c3228d0a-06ce-4f72-9b08-e2f42577ee8d.jpeg)
