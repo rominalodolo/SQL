@@ -11,4 +11,4 @@ def create_pie_chart(options):
         autopct = "%1.1f%%"
     )
 
-return figure
+    return figure

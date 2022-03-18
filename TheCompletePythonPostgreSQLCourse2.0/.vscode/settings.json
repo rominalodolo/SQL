@@ -3,6 +3,7 @@
         "astimezone",
         "dotenv",
         "psycopg",
+        "pyplot",
         "pytz"
     ]
 }
