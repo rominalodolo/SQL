@@ -145,7 +145,7 @@ Downloading PyCharm [Download Here](https://www.jetbrains.com/pycharm/promo/?sou
     - data is saved to permanent storage once a transaction is committed
     - contrasted to other databases that operate partially / fully "in memory"
     - operating in memory is faster, but riskier. Use a database that operates in memory for things you don't mind losing. 
-
+[READ MORE](https://pysql.tecladocode.com/section06/lectures/02_what_is_acid/)
 
 # Poll App 
 
@@ -239,6 +239,24 @@ You can't commit or roll back in functions. Use stored proceedures for that.
 
 - PL/pgSQL Function Parameter Modes
 [READ MORE](https://www.postgresqltutorial.com/plpgsql-function-parameters/)
+
+![eg2](https://user-images.githubusercontent.com/83961643/158964403-74cc7356-5a46-4d45-87a5-bbccb644969f.jpeg)
+![eg3](https://user-images.githubusercontent.com/83961643/158964428-30b95711-bb7c-4fc4-ba56-47859b8a1a82.jpeg)
+
+- Create Function Statement
+[READ MORE](https://www.postgresqltutorial.com/postgresql-create-function/)
+
+- Query Language (SQL) Functions
+[READ MORE](https://www.postgresql.org/docs/12/xfunc-sql.html)
+
+- Stored Procedures
+[READ MORE](https://carto.com/help/working-with-data/sql-stored-procedures/#what-is-a-stored-procedure)
+
+- User-Defined Functions
+[READ MORE](https://www.postgresql.org/docs/12/xfunc.html)
+
+- CREATE PROCEDURE
+[READ MORE](https://www.postgresqltutorial.com/postgresql-create-procedure/)
 
 # Charting data from our tables using matplotlib
 ![pip](https://user-images.githubusercontent.com/83961643/158846835-c3228d0a-06ce-4f72-9b08-e2f42577ee8d.jpeg)
