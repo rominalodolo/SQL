@@ -289,6 +289,7 @@ You can't commit or roll back in functions. Use stored proceedures for that.
 [READ MORE](https://docs.python.org/3.4/library/asyncio.html)
 
 ## Psycopg 2.9.3 documentation
+[Basic Module Usage](https://www.psycopg.org/docs/usage.html#thread-and-process-safety)
 [SQL String Composition](https://www.psycopg.org/docs/sql.html)
 
 # Charting data from our tables using matplotlib
