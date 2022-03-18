@@ -214,6 +214,14 @@ Working App:
 
 # Python & Advanced PostgreSQL with psycopg2
 
+## [READ MORE on Constraints](https://www.postgresql.org/docs/9.2/ddl-constraints.html#DDL-CONSTRAINTS-PRIMARY-KEYS)
+
+## Primary Keys
+"uniquely identifies each record in a table. Primary keys must contain UNIQUE values, and cannot contain NULL values. A table can have only ONE primary key; and in the table, this primary key can consist of single or multiple columns (fields)." - w3schools
+
+## Foreign Keys
+"a field (or collection of fields) in one table, that refers to the PRIMARY KEY in another table. The table with the foreign key is called the child table, and the table with the primary key is called the referenced or parent table." - w3schools
+
 
 # Charting data from our tables using matplotlib
 ![pip](https://user-images.githubusercontent.com/83961643/158846835-c3228d0a-06ce-4f72-9b08-e2f42577ee8d.jpeg)
