@@ -222,6 +222,20 @@ Working App:
 ## Foreign Keys
 "a field (or collection of fields) in one table, that refers to the PRIMARY KEY in another table. The table with the foreign key is called the child table, and the table with the primary key is called the referenced or parent table." - w3schools
 
+## Functions
+Functions are a reusable piece of code that executes when called. Similar to Python functions. Can do anything except handle transactions. 
+You can't commit or roll back in functions. Use stored proceedures for that. 
+
+![example](https://user-images.githubusercontent.com/83961643/158962105-172c42c5-b886-4773-b810-f0c8b18026b4.jpeg)
+
+- User-Defined Functions
+[READ MORE](https://www.postgresql.org/docs/12/xfunc.html)
+
+- CREATE FUNCTION
+[READ MORE](https://www.postgresql.org/docs/12/sql-createfunction.html)
+
+- Query Language (SQL) Functions
+[READ MORE](https://www.postgresql.org/docs/12/xfunc-sql.html)
 
 # Charting data from our tables using matplotlib
 ![pip](https://user-images.githubusercontent.com/83961643/158846835-c3228d0a-06ce-4f72-9b08-e2f42577ee8d.jpeg)
