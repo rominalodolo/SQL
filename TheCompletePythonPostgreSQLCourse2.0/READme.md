@@ -269,6 +269,7 @@ You can't commit or roll back in functions. Use stored proceedures for that.
 [Article](https://www.citusdata.com/blog/2018/02/15/when-postgresql-blocks/)
 [Viewing Locks](https://www.postgresql.org/docs/12/monitoring-locks.html)
 
+![6 3 PostgreSQL Conflicting Lock Modes](https://user-images.githubusercontent.com/83961643/158972001-41a82d79-f480-409b-980f-20c3e345d98b.png)
 
 # Charting data from our tables using matplotlib
 ![pip](https://user-images.githubusercontent.com/83961643/158846835-c3228d0a-06ce-4f72-9b08-e2f42577ee8d.jpeg)
