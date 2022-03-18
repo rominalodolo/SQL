@@ -302,4 +302,8 @@ You can't commit or roll back in functions. Use stored proceedures for that.
 ![example](https://user-images.githubusercontent.com/83961643/158987663-29ece9fa-dd2e-4343-bd29-5d7e7550f8d3.jpeg)
 ![test2](https://user-images.githubusercontent.com/83961643/158988142-0abdfd25-4119-441a-8434-bd75db5b9155.jpeg)
 
+
+[Online Example from Matplotlib Docs](https://matplotlib.org/stable/plot_types/basic/plot.html#sphx-glr-plot-types-basic-plot-py)
+![onlineexample](https://user-images.githubusercontent.com/83961643/158991171-82704071-672c-4961-8ded-a8f90f68c0f6.jpeg)
+
 LAST EDIT March 2022
