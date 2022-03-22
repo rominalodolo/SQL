@@ -12,10 +12,12 @@ To calculate the perimeter of a circle:
 
 DECLARE 
     area   NUMBER(6, 2)  ; 
+
 BEGIN 
     area := pi * radius * radius; 
 
-SELECT 3.14 * 5 ^ 2;
+SELECT 3.14 * 5 * 5;
+
 END; 
 
 2.	Using the 2010 Census county data, find out which New York state county
@@ -24,5 +26,19 @@ Indian/Alaska Native Alone.” What can you learn about that county from
 online research that explains the relatively large proportion of American
 Indian population compared with other New York counties?
 
+RESEARCH: 
+<https://www.census.gov/newsroom/releases/archives/2010_census/cb12-cn06.html>
+<https://www.ncbi.nlm.nih.gov/books/NBK233098/>
+
+
+SELECT geo_name,
+       state_us_abbreviation,
+       p0010001 AS total_population,
+       p0010005 AS american_indian_alaska_native_alone,
+       (CAST (p0010005 AS numeric(8,1)) / p0010001) * 100
+           AS percent_american_indian_alaska_native_alone
+FROM us_counties_2010
+WHERE state_us_abbreviation = 'NY'
+ORDER BY percent_american_indian_alaska_native_alone DESC;
 
 3.	Was the 2010 median county population higher in California or New York?
