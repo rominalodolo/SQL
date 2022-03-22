@@ -4,6 +4,19 @@ Here are three exercises to test your SQL math skills:
 5 inches. (If you don’t remember the formula, it’s an easy web search.) Do
 you need parentheses in your calculation? Why or why not?
 
+To calculate the area of a circle: 
+pi * radius * radius 
+
+To calculate the perimeter of a circle:
+2 * pi * radius
+
+DECLARE 
+    area   NUMBER(6, 2)  ; 
+BEGIN 
+    area := pi * radius * radius; 
+
+SELECT 3.14 * 5 ^ 2;
+END; 
 
 2.	Using the 2010 Census county data, find out which New York state county
 has the highest percentage of the population that identified as “American
