@@ -42,3 +42,4 @@ WHERE state_us_abbreviation = 'NY'
 ORDER BY percent_american_indian_alaska_native_alone DESC;
 
 3.	Was the 2010 median county population higher in California or New York?
+
